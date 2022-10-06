@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>    
+    <body>
+        <h3>JS Data Types</h3>
+        <p>When assing a number and a string, JavaScript will treat the number as a string.</p>
+        
+        <p id="demo1"></p>
+
+        <script>
+            let x = 16 + "Volvo";
+            document.getElementById("demo1").innerHTML = x;
+        </script>
+
+        <p id="demo2"></p>
+
+        <script>
+            let y = "Volvo" + 16;
+            document.getElementById("demo2").innerHTML = y;
+        </script>
+
+        <p>JavaScript evaluates expressions from left to right. Different sequences can produce different results:</p>
+
+        <p id = "demo3"></p>
+
+        <script>
+            let z = 16 + 4 + "Volvo"
+            document.getElementById("demo3").innerHTML = z;
+        </script>
+
+        <p id = "demo4"></p>
+
+        <script>
+            let m = "Volvo" + 16 + 4
+            document.getElementById("demo4").innerHTML = m;
+        </script>
+
+        <p>JavaScript has dynamic types. This means that the same variable can be used to hold different data types:</p>
+
+        <p id = "demo5"></p>
+
+        <script>
+            let l;          //Now l is undefined
+            l = 5;          //Now l is a Number
+            l = "John";     //Now l is a String
+            document.getElementById("demo5").innerHTML = l;
+        </script>
+
+        <h3>JavaScript Strings.</h3>
+
+        <p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string.</p>
+
+        <p id="demo6"></p>
+
+        <script>
+            let answer1 = "It's alright";
+            let answer2 = "He's called 'Johnny'";
+            let answer3 = 'He is called "Johnny"';
+
+            document.getElementById("demo6").innerHTML = answer1 + "<br>"+ answer2 + "<br>" + answer3;
+        </script>
+
+        <h3>JavaScript Numbers</h3>
+
+        <p>Numbers can be written with, or without decimals:</p>
+
+        <p id="demo7"></p>
+
+        <script>
+            let x1 = 34.00;
+            let x2 = 34;
+            let x3 = 3.14;
+        
+        document.getElementById("demo7").innerHTML = x1 + "<br>"+ x2 + "<br>" + x3;
+        </script>
+
+        <p>Extra large or extra small numbers can be written with scientific (exponential) notation:</p>
+        
+        <p id = "demo8"></p>
+
+        <script>
+            let a = 123e6;
+            let b = 123e-5;
+
+            document.getElementById("demo8").innerHTML = a + "<br>" + b;
+
+        </script>
+    </body>
+
+</html>
