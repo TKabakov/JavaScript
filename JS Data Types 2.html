@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Variables</title>
+    </head>
+    <body>
+        <h3>JavaScript Booleans</h3>
+
+        <p id = "demo1"></p>
+
+        <script>
+            let x = 5;
+            let y = 5;
+            let z = 6;
+
+            document.getElementById("demo1").innerHTML = (x == y) +"<br>"+ (x==z);
+        </script>
+
+        <h1>JavaScript Operators</h1>
+        <h2>The typeof Opeartor</h2>
+        <p>The value (and the data type) of a variable with no value is <b>undefined</b></p>
+
+        <p id="demo2"></p>
+
+        <script>
+            let car;
+            document.getElementById("demo2").innerHTML = car + "<br>"
++ typeof car;
+        </script>
+
+        <p>Variables can be empted if you set the value to <b>undefined</b>.</p>
+
+        <p id = "demo3"></p>
+
+        <script>
+            let autoMoto="Volvo";
+            autoMoto = undefined;
+
+            document.getElementById("demo3").innerHTML = autoMoto + "<br>" + typeof automoto;
+        </script>
+        <p>An empty string has both legal value and a type:</p>
+
+        <p id = "demo4"></p>
+
+        <script>
+            let vehicle= "";
+
+            document.getElementById("demo4").innerHTML = "The value is"+ vehicle + "<br>" +"The type is:"+ typeof vehicle;
+        </script>
+
+        <h2>JavaScript Objects</h2>
+
+        <p id = "demo5"></p>
+        <p id = "demo6"></p>
+
+        <script>
+            const person = {
+                firstName   : "John",
+                lastName    : "Doe",
+                age         : 50,
+                eyeColor    : "blue"
+            };
+
+            document.getElementById("demo5").innerHTML = 
+            person.firstName + " is " + person.age + " years old.";
+
+            document.getElementById("demo6").innerHTML =
+            person.firstName +" " +person.lastName + " has " + person.eyeColor +" "+ "eyes" +".";
+
+        </script>
+
+    </body>
+</html>
