@@ -63,7 +63,7 @@ The fifth variable, named result1, should be assigned the result of comparing if
 
 The sixth variable, named result2, should be assigned the result of comparing if the number stored in the test2 variable is not equal to 0, in other words, test2 == 0.
 */
-console.log("Task 3:")
+console.log("Task 3: Using the modulus operator, %, to test if a given number is odd")
 var num1 = 4;
 var num2 = 7;
 var test1= num1%2;
@@ -73,6 +73,18 @@ var result2= test2==0;
 console.log("Is", num1, "an even number?", result1);
 console.log("Is", num2, "an even number?", result2);
 
+/*
+The same taske can be re-write in this way (with less variables):
+*/
+var num1 = 3;
+var num2 = 4;
+var test1= num1%2;
+var test2= num2%2;
+var result1= test1==0;
+var result2= test2==0;
+console.log("Is", num1, "an even number?", test1==0);
+console.log("Is", num2, "an even number?", test2==0);
+
 var num1 = 5;
 var num2 = 8;
 var test1= num1%2;
@@ -81,7 +93,6 @@ var result1= test1==0;
 var result2= test2==0;
 console.log("Is", num1, "an even number?", result1);
 console.log("Is", num2, "an even number?", result2);
-
 /*
 Task 4: Add numbers using the + operator
 
