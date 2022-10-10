@@ -12,7 +12,6 @@ console.log(p);
 console.log(m-n);
 
 //The ++ Operator (increment)
-
 let a = 5;
 a++;
 let b = a;
@@ -27,7 +26,6 @@ console.log(c);
 console.log(c--);
 
 //The ** Operator (exponentiation) and Math.pow operator
-
 let e = 4;
 console.log(e**2);
 console.log(Math.pow(e,4));
