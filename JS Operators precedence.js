@@ -4,14 +4,15 @@ console.log(4*3**2);//4*9
 
 let a;
 let b;
-console.log(a=b=5);//from right to the left
-//it's the same as these 2 steps:
-console.log(b=5);
-console.log(a=b);
+console.log(a=b=5);
 
 console.log(3+10*2);
 console.log(3+(10*2));
 console.log((3+10)*2);
+
+console.log(a=b=5);
+console.log(b=5);
+console.log(a=b);
 
 console.log(4**3**2);//same as 4**(3**2)
 console.log(4/3/2);//smae as (4/3)/2
@@ -25,6 +26,6 @@ function A(){ console.log("called A"); return false};
 function B(){ console.log("called B"); return false};
 function C(){ console.log("called C"); return true};
 
-console.log(C() || B() && A());//B() && A() is "shortcut"
+console.log(C() || B() && A());
 
 console.log(A()&& C() || B())
