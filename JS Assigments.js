@@ -2,13 +2,14 @@
 let a = 10;
 a+=5;
 console.log(a+=5);
-console.log(a+=5);
+console.log(a);
 
 //Substraction Assignment
 let b = 10;
 b-=2;
 console.log(b-=2);
 console.log(b-=3);
+console.log(b);
 
 //Multiplication Assignment
 let c = 10;
