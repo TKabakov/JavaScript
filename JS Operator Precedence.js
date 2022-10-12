@@ -16,22 +16,29 @@ console.log(date);
 console.log(new Date());
 
 console.log("Postfix Increment");
+console.log("If used postfix, with operator after operand (for example, x++), the increment operator increments and returns the value before incrementing.");
 var a = 8;
 var b = a++;
 console.log(b);
 console.log(a++);
 console.log(a);
 
+let m = 3;
+const n = m++;
+console.log(m);//m = 4
+console.log(n)//n = 3;
+
+console.log("If used prefix, with operator before operand (for example, ++x), the increment operator increments and returns the value after incrementing.");
+var j = 8
+var f = ++j;
+console.log(f);//f = j+1 = j = 9;
+console.log(j);//j = 9;
+
 console.log("Postfix Decrement");
 var c = 8;
 var d = c--;
 console.log(c);
 console.log(d);
-
-var j = 8
-var f = ++j;
-console.log(f);
-console.log(j);
 
 console.log("The ! Operator (Logical NOT)");
 console.log(5==8);
