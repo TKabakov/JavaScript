@@ -17,7 +17,7 @@ console.log(y);
 //Here y is 8
 console.log(y);
 
-console.log("Redeclaring a variable with let, in anothe scope or in another block is allowed");
+console.log("Redeclaring a variable with let, in another scope or in another block is allowed");
 
 let z = 2;//Allowed
 console.log(z);
@@ -68,7 +68,6 @@ const myCar = {type:"Toyota", model:"Avensis", color:"white"};
 myCar.color = "silver";
 
 //Add a property
-
 myCar.owner = "Johnson";
 
 console.log(myCar.type);
@@ -77,7 +76,7 @@ console.log(myCar.color);
 console.log("Car owner is " + myCar.owner);
 
 console.log("Declaring a variable with const is similar to let when it comes to Block Scope.");
-console.log("The a declared in the block, in this example, is not the same as the x declared outside the block:");
+console.log("The variable a declared in the block, in this example, is not the same as the variable a declared outside the block:");
 
 const a = 10;//Here a is 10
 console.log(a);
