@@ -129,7 +129,7 @@ switch (new Date().getDay()){
         weekDay = "Saturday";
         break;
 }
-console.log("Today is " + weekDay+".");
+console.log("Today is " + weekDay +".");
 
 let text;
 switch (new Date().getDay()){
@@ -147,7 +147,7 @@ console.log(text);
 console.log(new Date().getDay());
 console.log(new Date);
 
-//The deafault case does not to be thr last case in the switch block:
+//The deafault case does not to be the last case in the switch block:
 switch (new Date().getDay()){
     default:
         text = "Looking for the weekend";
