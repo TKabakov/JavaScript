@@ -1,3 +1,4 @@
+//if, else if, else statement
 let coffee = "cold";
 if(coffee == "hot") {
     console.log("Too hot")
@@ -11,7 +12,6 @@ else {
 
 let m = 888888888888889;
 let n = m % 2;
-
 if(n == 0){
     console.log("Числото е четно");
 }
@@ -20,17 +20,14 @@ else {
 };
 
 let result = 30;
-
 if(result > 40) {
     console.log("You passed the test")
 }
 else{
     console.log("You did not pass the test")
 }
-//if, else if, else
 
 let place = "gold";
-
 if(place == "first"){
     console.log("Gold")
 }
@@ -43,9 +40,9 @@ else if(place == "third"){
 else{
     console.log("No medal")
 }
+
 //Switch statement
 let place2 = "first";
-
 switch(place2){
     case'first':
         console.log("Gold");
@@ -60,6 +57,7 @@ switch(place2){
         console.log("No medal");
 }
 
+//Compare if, else if, else satatemet with switch statement
 let light = "red";
 if(light == "green"){
     console.log("Drive")
