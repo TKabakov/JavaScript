@@ -11,8 +11,8 @@ console.log(car.model,car.color, car.millage);
 console.log(car["type"], car["model"]);
 
 console.log("Using new Date() without arguments, creates a date object with the current date and time:");
-const date = new Date()
-console.log(date);
+const date1 = new Date()
+console.log(date1);
 console.log(new Date());
 
 console.log("Postfix Increment");
