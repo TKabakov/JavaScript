@@ -6,9 +6,8 @@ else {
     console.log("Good evening!")
 }
 
-const time = new Date().getHours();
-
 //else if statement
+const time = new Date().getHours();
 let greeting;
 if(time < 10){
     greeting = "Good morning!";
