@@ -1,8 +1,8 @@
 for (var j = 2023; j < 2025; j++){
 console.log(j);
-for( var l = 6 ; l < 9; l++){
-console.log(l);
-}
+    for( var l = 6 ; l < 9; l++){
+        console.log(l);
+    }
 }
 
 //Custum multiplication table:
@@ -22,14 +22,14 @@ for( var a = 100; a > 9; a = a - 10){
 let cube ="ABCDEFG";
 for ( let s = 0 ; s < cube.length ; s++){
     let styles = "front-size: 45px; border-radius: 10px; border: 1px solid blue; background: pink; color: purple";
-    console.log("%c" + cube[s], styles);
+        console.log("%c" + cube[s], styles);
 }
 
 //the length of the string is automatically undated
 let cube2 ="ABCD";
 for ( let s = 0 ; s < cube2.length ; s++){
     let styles = "front-size: 45px; border-radius: 10px; border: 1px solid blue; background: pink; color: purple";
-    console.log("%c" + cube2[s], styles);
+        console.log("%c" + cube2[s], styles);
 }
 
 //Loop with if-else statement
