@@ -69,6 +69,7 @@ for ( y = 1 ; y <= 10; y++){
 
 let z = 1;
 let text = "";
+
 while(z<=10){
     switch(z){
         case 1:
