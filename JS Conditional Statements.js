@@ -1,4 +1,3 @@
-//if else statement
 if (new Date().getHours() < 18){
     console.log("Good day!");
 }
@@ -6,7 +5,6 @@ else {
     console.log("Good evening!")
 }
 
-//else if statement
 const time = new Date().getHours();
 let greeting;
 if(time < 10){
@@ -31,6 +29,57 @@ else {
     console.log("Just right")
 };
 
+let m = 888888888888889;
+let n = m % 2;
+
+if(n == 0){
+    console.log("The number is even");
+}
+else {
+    console.log("The number is odd")
+};
+
+let result = 30;
+
+if(result > 40) {
+    console.log("You passed the test")
+}
+else{
+    console.log("You did not pass the test")
+}
+//if, else if, else
+
+let place = "gold";
+
+if(place == "first"){
+    console.log("Gold")
+}
+else if(place == "secod"){
+    console.log("Silver")
+}
+else if(place == "third"){
+    console.log("Bronze")
+}
+else{
+    console.log("No medal")
+}
+//Switch statement
+let place2 = "first";
+
+switch(place2){
+    case'first':
+        console.log("Gold");
+        break;
+    case'second':
+        console.log("Silver");
+        break;
+    case'third':
+        console.log("Bronze");
+        break;
+    default:
+        console.log("No medal");
+}
+
 let light = "red";
 if(light == "green"){
     console.log("Drive")
@@ -42,7 +91,7 @@ else if(light == "red"){
     console.log("Don't drive")
 }
 else{
-    console.log("Ligth is not green, yellow or red")
+    console.log("Car is not green, yelloe or red")
 }
 
 switch(light){
@@ -128,7 +177,7 @@ switch (new Date().getDay()){
         weekDay = "Saturday";
         break;
 }
-console.log("Today is " + weekDay +".");
+console.log("Today is " + weekDay+".");
 
 let text;
 switch (new Date().getDay()){
@@ -146,7 +195,7 @@ console.log(text);
 console.log(new Date().getDay());
 console.log(new Date);
 
-//The deafault case does not to be the last case in the switch block:
+//The deafault case does not to be thr last case in the switch block:
 switch (new Date().getDay()){
     default:
         text = "Looking for the weekend";
