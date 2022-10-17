@@ -7,45 +7,45 @@ if(i == 2 || i == 3) {
 
   switch(i) {
     case 1:
-      console.log("Hello");
+      console.log("Hello!");
       break;
     case 2:
-      console.log("Goodnight");
+      console.log("Goodnight!");
       break;
     case 3:
-      console.log("Goodbye");
+      console.log("Goodbye!");
       break;
   }
 
   var i = 7;
   if(i <= 5) {
-    console.log("Hello");
+    console.log("Hello!");
   } else if(i <= 10) {
-    console.log("Goodnight");
+    console.log("Goodnight!");
   } else {
-    console.log("Goodbye");
+    console.log("Goodbye!");
   }
 
   var i = 0;
   while(i < 3) {
-    console.log("Hello");
+    console.log("Hello!");
     i++;
   }
 
   for (i = 0; i < 2; i++) {
-    console.log("Hello");
+    console.log("Hello!");
 }
 
 if(i == 0 && i == 1) {
-    console.log("Hello");
+    console.log("Hello!");
   } else {
-    console.log("Goodbye");
+    console.log("Goodbye!");
   }
 
   if(i < 5) {
-    console.log("Hello");
+    console.log("Hello!");
   } else {
-    console.log("Goodbye");
+    console.log("Goodbye!");
   }
 
 
