@@ -29,7 +29,7 @@ else {
     console.log("Just right")
 };
 
-let m = 888888888888889;
+let m = 88;
 let n = m % 2;
 
 if(n == 0){
@@ -39,7 +39,7 @@ else {
     console.log("The number is odd")
 };
 
-let result = 30;
+let result = 45;
 
 if(result > 40) {
     console.log("You passed the test")
@@ -47,8 +47,8 @@ if(result > 40) {
 else{
     console.log("You did not pass the test")
 }
-//if, else if, else
 
+//if, else if, else
 let place = "gold";
 
 if(place == "first"){
@@ -63,6 +63,7 @@ else if(place == "third"){
 else{
     console.log("No medal")
 }
+
 //Switch statement
 let place2 = "first";
 
@@ -91,7 +92,7 @@ else if(light == "red"){
     console.log("Don't drive")
 }
 else{
-    console.log("Car is not green, yelloe or red")
+    console.log("Light is not green, yelloe or red")
 }
 
 switch(light){
@@ -121,7 +122,7 @@ else if(age < 18){
     console.log("You get an allowance")
 }
 else{
-    console.log("The value of yor age is not numerical")
+    console.log("The value of your age is not numerical")
 };
 
 //Days of the week program
@@ -153,6 +154,7 @@ switch(day){
 };
 
 //Another day of the week program based on switch
+//getDate returs number od the day in the week
 let weekDay;
 switch (new Date().getDay()){
     case 0:
@@ -195,7 +197,7 @@ console.log(text);
 console.log(new Date().getDay());
 console.log(new Date);
 
-//The deafault case does not to be thr last case in the switch block:
+//The deafault case does not to be the last case in the switch block:
 switch (new Date().getDay()){
     default:
         text = "Looking for the weekend";
@@ -212,7 +214,7 @@ console.log(text);
 switch(new Date().getDay()){
     case 4:
     case 5:
-        text = "Sood it is weekend";
+        text = "Soon it is weekend";
         break;
     case 0:
     case 6:
