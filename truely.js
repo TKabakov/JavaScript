@@ -24,42 +24,50 @@ console.log(true);
 else{
 console.log(false)
 }// returns true
+
+//What returns false:0, "0", "", false, undefined, null, NaN
 if("0"){
 console.log(true);
 }
 else{
 console.log(false)
 } //returns true
+
 if(0){
 console.log(true);
 }
 else{
 console.log(false)
 } //returns false
+
 if(""){
 console.log(true);
 }//returns false
 else{
 console.log(false)
 } // returns false
+
 if(null){
 console.log(true);
 }
 else{
 console.log(false)
 } //returns false
+
 if(undefined){
 console.log(true);
 }
 else{
 console.log(false)
 }// returns false
+
 if(NaN){
 console.log(true);
 }//returns false
 else{
 console.log(false)
 }
+
 /* In logical AND (&&) if the first object is true it returns true*/
 if(true && "dog"){
 console.log(true);
@@ -67,6 +75,7 @@ console.log(true);
 else{
 console.log(false)
 }//returns dog
+
 if([] && "dog"){
 console.log(true);
 }
@@ -74,6 +83,7 @@ else{
 console.log(false)
 }
 //returns god
+
 /* In logical AND (&&) if first object is falsy, it returns false*/
 if(false && "cat"){
     console.log(true);
@@ -111,6 +121,7 @@ if(true > false){
 else{
     console.log(false)
 }//returns true
+
 /*
 The code is pretty human-readable — it is saying "if the condition returns true, run code A, else run code B"
 */
