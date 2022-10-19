@@ -1,6 +1,9 @@
 const cars = ["Volvo", "Fiat", "BMW"];
 console.log(cars);
-//Spaces and line breaks are not important. A declaration can span multiple lines:
+
+/*
+Spaces and line breaks are not important. A declaration can span multiple lines:
+*/
 const car = [
     "Volvo",
     "Fiat",
@@ -18,10 +21,11 @@ console.log(myCar);
 /*
 JavaScript array elements are accessed using numeric indexes (starting from 0).
 */
-
 const myCars = ["Volvo", "Fiat", "BMW"];
 console.log(myCars[0]);
+console.log(myCars[1]);
 console.log(myCars[2]);
+
 /*
 JavaScript array elements are accessed using numeric indexes (starting from 0)
 */
@@ -48,7 +52,9 @@ console.log(person.secondName);
 console.log(person.age);
 
 /*
-You can have objects in an Array. You can have functions in an Array. You can have arrays in an Array:
+You can have objects in an Array. 
+You can have functions in an Array. 
+You can have arrays in an Array:
 */
 
 function myFunction(a, b){
@@ -90,6 +96,7 @@ function newElement(){
 }
 newElement();
 console.log(fruits);
+
 /*
 The length property provides an easy way to append new elements to an array without using the push() method.
 */
@@ -110,6 +117,7 @@ for (i = 0; i < fLen; i++){
     text += fruits[i]+", ";
 }
 console.log(text);
+
 /*
 If you use a named index when accessing an array, 
 JavaScript will redefine the array to a standard object, 
@@ -121,11 +129,12 @@ persona["lastName"] = "Smith";
 persona["age"] = 45;
 console.log(persona[0]);
 console.log(persona.length);
+
 /*
 Avoid using new Array(). Use [] instead.
 */
 const points = new Array(30,50,100);
-const points2 = [30,50,100];
+const points2 = [30,50,100];//it is the same as new Array
 console.log(points[2]);
 console.log(points2[2]);
 /*
