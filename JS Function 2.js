@@ -35,8 +35,16 @@ function listArrayItems4 (arr){
         }
     }
 }
-
 listArrayItems4(colors);
+/*
+100 tomato!
+200 orange
+300 yellow
+400 green
+500 blue
+600 purple
+700 pink
+*/
 
 //Found the letter function
 function letterFinder (word,match){
