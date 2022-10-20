@@ -51,6 +51,10 @@ function letterFinder (word,match){
 }
 
 letterFinder("test","t");
+/*Found the letter  t at 0
+--No match found at  1
+--No match found at  2
+Found the letter  t at 3 */
 
 /*
 When you pass an array as a parameter, 
@@ -105,7 +109,7 @@ the return keyword,
 and the curly brackets.
 */
 const l = (n,m) => n*m;
-console.log(l(4,5));
+console.log(l(4,5));//20
 
 /*
 You can only omit the return keyword 
@@ -115,5 +119,5 @@ Because of this, it might be a good habit to
 always keep them:
 */
 const s = (n,m) =>{ return n*m };
-console.log(s( 4,6));
+console.log(s( 4,6));//24
  
