@@ -14,6 +14,7 @@ function listArrayItems2 (arr) {
     }
 }
 listArrayItems2(colors);
+
 //To start the count from one instead of zero, I can update my function declaration as follows:  
 function listArrayItems3 (arr) {
     for( let i = 0; i < arr.length; i++){
@@ -37,6 +38,7 @@ function listArrayItems4 (arr){
 
 listArrayItems4(colors);
 
+//Found the letter function
 function letterFinder (word,match){
     for (let i = 0; i < word.length; i++){
         if( word[i] == match){
