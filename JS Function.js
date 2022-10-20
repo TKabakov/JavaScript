@@ -6,7 +6,8 @@ myFunction1();
 
 function myFuction (p1,p2) {
     return p1 * p2;
-} 
+}
+console.log(myFunction(2,4));
 
 function addTwoNums () {
     var a = 10;
@@ -54,19 +55,11 @@ function myFunc (){
     let carName = "Volvo";
     console.log (typeof carName + " " + carName);//carName CAN be use here
 }
-
-    
     console.log(myFunc());
     console.log(typeof carName);//carName CANNOT be use here
 
-function myFunction() {
-    console.log ("Hello World!")
-}
-myFunction();
-
-/*A function can be stored in a variable.
-*/
 /*
+A function can be stored in a variable.
 After a function has been stored in a variable,
 the variable can be used as a function:
 */
@@ -84,7 +77,8 @@ const buildIn = function ( a, b) {
     return a * b
 }
 console.log(buildIn(3,5));
-//JavaScript function can be called before they are declared (they are hoisted the same as variables)
+
+//JavaScript function can be called before they are declared (they are HI+OISTED the same as variables)
 
 console.log(hoistingFunction(5));
 
