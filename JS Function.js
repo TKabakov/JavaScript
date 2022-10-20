@@ -1,12 +1,12 @@
-function myFuction (p1,p2) {
-    return p1 * p2;
-} 
-
-function myFunc (){
+function myFunction1 (){
     console.log ("Hello World!");
 }
 
-myFunc();
+myFunction1();
+
+function myFuction (p1,p2) {
+    return p1 * p2;
+} 
 
 function addTwoNums () {
     var a = 10;
@@ -27,7 +27,7 @@ function addNums(x,y) {
 addNums(2,2);
 addNums(3,4);
 
-function celToFar (f){
+function celsiusToFahrenheit (f){
     return (5/9)*(f-32);
 }
 var temp = 55;
