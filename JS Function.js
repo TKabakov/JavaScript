@@ -128,7 +128,7 @@ The arguments.length property returns the number of arguments received by the fu
 function arguments (a, b, c) {
     return arguments.length;
 }
-console.log( arguments(4, 5, 6));
+console.log( arguments(4, 5, 6));//rturns 3
 
 /*
 The toString() method returns the function as a string:
@@ -137,16 +137,20 @@ function string (a, b) {
     return a * b;
 }
 let text = string.toString()
-console.log(text);
-console.log(string);
+console.log(text); 
+/*returns function string (a, b) {
+    return a * b;
+}*/
+console.log(string);//returns [Function: string]
+
 /*
 With arrow functions, you don't have to type the function keyword, the return keyword, and the curly brackets.
 */
 const l = (s, p) => s/p;
-console.log(l(6,3));
-//Be careful - Arrow functions are not hoisted. They must be defined before they are used.
-/*
+console.log(l(6,3));//returns 2
+ 
+/*Be careful - Arrow functions are not hoisted. They must be defined before they are used.
 You can only omit the return keyword and the curly brackets if the function is a single statement. Because of this, it might be a good habit to always keep them:
 */
 const f = (l, m) => { return l/m };
-console.log(f(8,2));
+console.log(f(8,2));//returns 4
