@@ -47,19 +47,17 @@ console.log("The temperature is " + farToCel(temp) + " Celsius");//The temperatu
 
 /*
 Variables declared within a JavaScript function, become LOCAL to the function.
-
 Local variables can only be accessed from within the function.
 */
-console.log(typeof carName);//carName CANNOT be use here
+console.log(typeof carName);//carName CANNOT be use here, it returns undefined
 
-function myFunc (){
+function myFunc(){
     let carName = "Volvo";
-    console.log (typeof carName + " " + carName);//carName CAN be use here
+    console.log (typeof carName + " " + carName);//carName CAN be use here, it returns string Volvo
 }
 
-    
-    console.log(myFunc());
-    console.log(typeof carName);//carName CANNOT be use here
+    console.log(myFunc());//it returns string Volvo
+    console.log(typeof carName);//carName CANNOT be use here, it returns undefined
 
 function myFunction() {
     console.log ("Hello World!")
