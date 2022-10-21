@@ -64,37 +64,40 @@ function myFunction() {
 }
 myFunction();
 
-/*A function can be stored in a variable.
-*/
 /*
+A function can be stored in a variable.
 After a function has been stored in a variable,
 the variable can be used as a function:
 */
 const x = function ( a, b) {
     return a * b
 };
-console.log(x(4,6));
+console.log(x(4,6));//24
+
 /*
 Functions can also be defined with a built-in JavaScript function constructor called Function()
 */
 const buildInFunction = new Function ( "a", "b", "return a*b");
-console.log(buildInFunction(3,6));
+console.log(buildInFunction(3,6));//18
+
 //This is the same as:
 const buildIn = function ( a, b) {
     return a * b
 }
-console.log(buildIn(3,5));
-//JavaScript function can be called before they are declared (they are hoisted the same as variables)
+console.log(buildIn(3,5));//15
 
-console.log(hoistingFunction(5));
+/*
+JavaScript function can be called before they are declared (they are hoisted the same as variables)
+*/
+console.log(hoistingFunction(5));//25
 
 function hoistingFunction (m) {
     return m * m;
 }
+
 /*
 Functions can be invoked automatically without being called:
 */
-
 (function (){
     console.log("Hello! I called myself");
 })();
@@ -107,7 +110,8 @@ function functionAsValue ( a, b){
     return a * b;
 }
 let v = functionAsValue (3,7);
-console.log(v);
+console.log(v);//21
+
 /*
 JavaScript functions can be used in expressions:
 */
@@ -115,7 +119,7 @@ function expression (a , b) {
     return a * b;
 }
 let e = expression (4, 8)*2 + 10;
-console.log (e);
+console.log (e);//returns 74
 
 /*
 The arguments.length property returns the number of arguments received by the function:
