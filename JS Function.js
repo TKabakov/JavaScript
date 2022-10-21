@@ -6,7 +6,7 @@ function myFunct (){
     console.log ("Hello World!");
 }
 
-myFunct();
+myFunct();//Hello World!
 
 function addTwoNums () {
     var a = 10;
@@ -16,7 +16,7 @@ function addTwoNums () {
     console.log(c);
 }
 
-addTwoNums();
+addTwoNums();//returns 30
 
 function addNums(x,y) {
     var z = x + y;
@@ -24,24 +24,26 @@ function addNums(x,y) {
     console.log(z);
 }
 
-addNums(2,2);
-addNums(3,4);
+addNums(2,2);//returns 4
+addNums(3,4);//the same function with different paramenters returns 7
 
-function celToFar (f){
+/*
+Function that convert fahrenheit to celsius 
+*/
+function farToCel (f){
     return (5/9)*(f-32);
 }
 var temp = 55;
-    console.log(celToFar(temp));
+    console.log(farToCel(temp));
 
-/*Accessing a function without () will return the function definition instead of the function result:*/
-function celToFar (f){
-    return (5/9)*(f-32);
-}
+/*
+Accessing a function without () will return the function definition instead of the function result:
+*/
+
 var temp = 75;
-    console.log(celToFar);
+    console.log(farToCel);//returns [Function: farToCel]
 
-
-console.log("The temperature is " + celToFar(temp) + " Celsius");
+console.log("The temperature is " + farToCel(temp) + " Celsius");//The temperature is 23.88888888888889 Celsius
 
 /*
 Variables declared within a JavaScript function, become LOCAL to the function.
