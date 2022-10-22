@@ -4,6 +4,13 @@ function listArrayItems (arr) {
     }
 }
 let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink'];
+/*red
+orange
+yellow
+green
+blue
+purple
+pink*/
 
 listArrayItems(colors);
 
@@ -14,6 +21,14 @@ function listArrayItems2 (arr) {
     }
 }
 listArrayItems2(colors);
+/*0 red
+1 orange
+2 yellow
+3 green
+4 blue
+5 purple
+6 pink
+*/
 
 //To start the count from one instead of zero, I can update my function declaration as follows:  
 function listArrayItems3 (arr) {
@@ -22,6 +37,14 @@ function listArrayItems3 (arr) {
     }
 }
 listArrayItems3(colors);
+/*1 red
+2 orange
+3 yellow
+4 green
+5 blue
+6 purple
+7 pink
+*/
 
 //I can even add one or more conditions, such as:
 function listArrayItems4 (arr){
@@ -57,7 +80,6 @@ function letterFinder (word,match){
         }
     }
 }
-
 letterFinder("test","t");
 /*Found the letter  t at 0
 --No match found at  1
@@ -73,9 +95,7 @@ as shown in the following example:
 function myFunc(theArr){
     theArr[0] = 30;
 }
-
 const arr = [45];
-
 console.log(arr[0]);//45
 myFunc(arr);
 console.log(arr[0]);//30
@@ -88,26 +108,23 @@ as shown in the following example:
 */
 function myFunction(theObject) {
     theObject.make = "Toyota";
-    theObject.modle = "Corrola"
+    theObject.model = "Corrola"
 }
 
 const myCar = {
     make: "Honda",
-    modle: "Accord",
+    model: "Accord",
     year : 1998,
 };
-console.log(myCar);
-// x gets the value "Honda"
-const x = myCar.make;
-console.log(x);
-// the make property is changed by the function
-myFunction(myCar);
-//y gets the value "Toyota"
-const y = myCar.make
-console.log(y);
-const z = myCar.modle;
-console.log(z);
-console.log(myCar);
+console.log(myCar);//{ make: 'Honda', model: 'Accord', year: 1998 }
+const x = myCar.make;// x gets the value "Honda"
+console.log(x);//Honda
+myFunction(myCar);//myFunction is invoke and theObject.make gets value "Toyota" and theObject.model gets value "Corrola" 
+const y = myCar.make//y gets the value "Toyota"
+console.log(y);//Toyota
+const z = myCar.model;//z gets the value "Corrola
+console.log(z);//Corrola
+console.log(myCar);//{ make: 'Toyota', modle: 'Corrola', year: 1998 }
 
 /*
 Arrow functions allows 
