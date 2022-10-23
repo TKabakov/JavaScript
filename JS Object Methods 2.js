@@ -8,6 +8,7 @@ car.mileage = 98765;
 car.ligthsOn = function(){
     console.log('The lights are on.')
 }
+
 console.log(car);
 car.turnTheKey();
 car.ligthsOn();
