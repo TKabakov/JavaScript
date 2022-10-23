@@ -4,25 +4,26 @@ let letters = [ 'a', 'b', 'c'];
 for (let i = 0; i < letters.length; i++){
     console.log(letters[i]);
 }
-/*a
+/*
+a
 b
-c*/
+c
+*/
 
 //for loop over a string
 let letters2 = "abc";
-
 for (let i = 0; i < letters2.length; i++){
     console.log(letters[i]);
 }
 /*the same result
 a
 b
-c*/
+c
+*/
 
 let veggies = ['onion', 'parcley', 'carrot'];
 
 console.log(veggies.length);//3
-
 console.log(veggies[0]);//onion
 console.log(veggies[1]);//parcley
 
@@ -52,7 +53,8 @@ y
 
 let greet = "Hello, ";
 let user = "Lisa";
-/*I can confirm that the plus operator here, 
+/*
+I can confirm that the plus operator here, 
 when used on strings, acts as a concatenation operator,
 meaning it join strings together.
 */
@@ -76,14 +78,16 @@ The concat() method joins two strings.
 console.log("Wo".concat("rl").concat("d"));//World
 
 /*
-The indexOf returns the location of the first position that matches a character.
+The indexOf returns the location of the First position that matches a character.
 */
 console.log("ho-ho-ho".indexOf("h"));//0
 console.log("ho-ho-ho".indexOf("o"));//1
 console.log("ho-ho-ho".indexOf("-"));//2
+
 /*
 The lastIndexOf finds the last match, otherwise it works the same as indexOf.
 */
+
 console.log("ho-ho-ho".split("-"));//[ 'ho', 'ho', 'ho' ]
 console.log("ho-ho-ho".split("o"));//[ 'h', '-h', '-h', '' ]
 
@@ -101,12 +105,12 @@ clothes.push("shirt");//Add 5th item of clothing
 console.log(clothes);//[ 'jeans', 'jacket', 'tie', 'shoes', 'shirt' ]
 
 clothes.pop();
-console.log(clothes);//[ 'jeans', 'jacket', 'tie', 'shoes' ] no "shirt"
+console.log(clothes);//[ 'jeans', 'jacket', 'tie', 'shoes' ], no "shirt"
 
 clothes.push("hat");
 console.log(clothes);//[ 'jeans', 'jacket', 'tie', 'shoes', 'hat' ]
 
-console.log(clothes[2]);
+console.log(clothes[2]);//tie
 
 let fevCar = {};
 fevCar.color = "blue";
