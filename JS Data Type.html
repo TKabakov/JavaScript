@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+        <title>Data Types<title>
     </head>    
     <body>
         <h3>JS Data Types</h3>
@@ -11,14 +11,14 @@
 
         <script>
             let x = 16 + "Volvo";
-            document.getElementById("demo1").innerHTML = x;
+            document.getElementById("demo1").innerHTML = x;//16Volvo
         </script>
 
         <p id="demo2"></p>
 
         <script>
             let y = "Volvo" + 16;
-            document.getElementById("demo2").innerHTML = y;
+            document.getElementById("demo2").innerHTML = y;//Volvo16
         </script>
 
         <p>JavaScript evaluates expressions from left to right. Different sequences can produce different results:</p>
@@ -27,14 +27,14 @@
 
         <script>
             let z = 16 + 4 + "Volvo"
-            document.getElementById("demo3").innerHTML = z;
+            document.getElementById("demo3").innerHTML = z;//20Volvo
         </script>
 
         <p id = "demo4"></p>
 
         <script>
             let m = "Volvo" + 16 + 4
-            document.getElementById("demo4").innerHTML = m;
+            document.getElementById("demo4").innerHTML = m;//Volvo164
         </script>
 
         <p>JavaScript has dynamic types. This means that the same variable can be used to hold different data types:</p>
@@ -45,7 +45,7 @@
             let l;          //Now l is undefined
             l = 5;          //Now l is a Number
             l = "John";     //Now l is a String
-            document.getElementById("demo5").innerHTML = l;
+            document.getElementById("demo5").innerHTML = l;//John
         </script>
 
         <h3>JavaScript Strings.</h3>
@@ -60,6 +60,11 @@
             let answer3 = 'He is called "Johnny"';
 
             document.getElementById("demo6").innerHTML = answer1 + "<br>"+ answer2 + "<br>" + answer3;
+                /*
+                It's alright
+                He's called 'Johnny'
+                He is called "Johnny"
+                */
         </script>
 
         <h3>JavaScript Numbers</h3>
@@ -74,6 +79,11 @@
             let x3 = 3.14;
         
         document.getElementById("demo7").innerHTML = x1 + "<br>"+ x2 + "<br>" + x3;
+                /*
+                34
+                34
+                3.14
+                */
         </script>
 
         <p>Extra large or extra small numbers can be written with scientific (exponential) notation:</p>
@@ -85,7 +95,10 @@
             let b = 123e-5;
 
             document.getElementById("demo8").innerHTML = a + "<br>" + b;
-
+                /*
+                123000000
+                0.00123
+                */
         </script>
     </body>
 
