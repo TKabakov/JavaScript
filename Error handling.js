@@ -22,6 +22,10 @@ try{
  }
  
  console.log("My program does not stop");
+/*
+There is an Reference Error
+My program does not stop
+*/
  
  //A ReferenceError gets thrown when, for example, one tries to use variables that haven't been declared anywhere
  console.log(username);//ReferenceError: username is not defined at Object
