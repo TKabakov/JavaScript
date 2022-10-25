@@ -70,12 +70,28 @@ console.log(3);
 console.log(2);
 console.log(1);
 console.log("Countdown finished!");
+/*
+5
+4
+3
+2
+1
+Countdown finished!
+*/
 
 //The same can be down by loop:
 for (i = 5; i > 0; i--){
     console.log(i);
 }
 console.log("Countdown finished!");
+/*
+5
+4
+3
+2
+1
+Countdown finished!
+*/
 
 console.log("Task 3");
 /*
@@ -87,6 +103,10 @@ while( n < 6) {
 }
 console.log(text);
 console.log("Counting comleted!");
+/*
+12345
+Counting comleted!
+*/
 
 console.log("Task 4");
 /*
@@ -100,8 +120,12 @@ while ( p > 0 ){
 }
 console.log(text3);
 console.log("Countdown finished!");
-
+/*
+54321
+Countdown finished!
 console.log("Task 5");
+*/
+
 /*
 Write a "while" loop that will perform exactly the same repetitive code as this:
 */
@@ -110,9 +134,23 @@ console.log(2019);
 console.log(2020);
 console.log(2021);
 console.log(2022);
+/*
+2018
+2019
+2020
+2021
+2022
+*/
 
 let f = 2018;
 while (f < 2023){
     console.log(f);
     f++;
 }
+/*
+2018
+2019
+2020
+2021
+2022
+*/
