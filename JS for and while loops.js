@@ -1,18 +1,35 @@
 console.log("Task 1")
 /*
-Write a "for" loop that will perform exactly the same repetitive code as this:*/
+Write a "for" loop that will perform exactly the same repetitive code as this:
+*/
 console.log(1);
 console.log(2);
 console.log(3);
 console.log(4);
 console.log(5);
 console.log("Counting comleted!");
+/*
+1
+2
+3
+4
+5
+Counting comleted!
+*/
 
 //The same can be done by loop
 for (i = 1; i < 6; i++){
     console.log(i);
 }
 console.log("Counting comleted!");
+/*
+1
+2
+3
+4
+5
+Counting comleted!
+*/
 
 //The same is:
 let m = 1;
@@ -20,6 +37,14 @@ for( ; m < 6; m++){
     console.log(m);
 }
 console.log("Counting comleted!");
+/*
+1
+2
+3
+4
+5
+Counting comleted!
+*/
 
 //The same is:
 let n = 1;
@@ -30,6 +55,10 @@ while( n < 6) {
 }
 console.log(text);
 console.log("Counting comleted!");
+/*
+12345
+Counting comleted!
+*/
 
 console.log("Task 2")
 /*
