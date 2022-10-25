@@ -8,6 +8,12 @@ try{
  
  console.log("My program does not stop");
  
+/*
+There is an error
+The error is saved in the err block
+My program does not stop
+*/
+ 
 try{
  throw new ReferenceError()
  }catch(error){
