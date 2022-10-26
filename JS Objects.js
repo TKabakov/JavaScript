@@ -57,6 +57,7 @@ The above example could also be written using an object initializer,
 which is a comma-delimited list of zero or more pairs of property names 
 and associated values of an object, enclosed in curly braces ({}):
 */
+
 const myCar2 = {
     make    : "Ford",
     model   : "Mustang",
@@ -95,6 +96,7 @@ myObj[ ""]              = "This key is an empty string";
 
 console.log(myObj);
 console.log(myObj.myString);
+
 /*
 JavaScript object property names (keys) can only be strings or Symbols — 
 all keys in the square bracket notation are converted to strings 
