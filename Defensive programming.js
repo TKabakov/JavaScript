@@ -16,6 +16,24 @@ function letterFinder (word, match) {
     }
 }
 
+letterFinder(3,5);//Please, pass correct arguments to the function.
 
-letterFinder(3,5);
-letterFinder("cat", 3);
+letterFinder("cat", 3);//Please, pass correct arguments to the function.
+
+letterFinder("build","ld");//Please, pass correct arguments to the function.
+
+letterFinder("cat", "t");
+/*
+--No match found at 0
+--No match found at 1
+Found the t at  2
+*/
+
+letterFinder("build", "u");
+/*
+--No match found at 0
+Found the u at  1
+--No match found at 2
+--No match found at 3
+--No match found at 4
+*/
