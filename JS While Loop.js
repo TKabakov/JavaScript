@@ -10,25 +10,31 @@ The number is 0.The number is 1.The number is 2.
 The number is 3.The number is 4.The number is 5.
 */
 
+let text2 = "";
+let j = 0;
 do {
-    text += "The number is " + i + ".";
-    i++;
+    text2 += "The number is " + j + ".";
+    j++;
 }
-while ( i< 8);
-console.log(text);
+while ( j< 8);
+console.log(text2);
 /*
  The number is 0.The number is 1.The number is 2.
  The number is 3.The number is 4.The number is 5.
  The number is 6.The number is 7.
-*/;
-
+*/
+let text3 = "";
 let m = 0;
 do {
-    text += ".  The number is " + m;
+    text3 += "The number is " + m + ".";
     m++;
 }
 while ( m < 2);
-console.log(text);
+console.log(text3);
+/*
+The number is 0.The number is 1.
+*/
+
 let l = 0
 let text2 = "";
 const cars = ["BMW", "Volvo", "Saab", "Ford"];
