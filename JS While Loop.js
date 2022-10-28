@@ -11,11 +11,16 @@ The number is 3.The number is 4.The number is 5.
 */
 
 do {
-    text += ".  The number is " + i;
+    text += "The number is " + i + ".";
     i++;
 }
 while ( i< 8);
 console.log(text);
+/*
+ The number is 0.The number is 1.The number is 2.
+ The number is 3.The number is 4.The number is 5.
+ The number is 6.The number is 7.
+*/;
 
 let m = 0;
 do {
