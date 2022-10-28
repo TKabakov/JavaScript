@@ -1,10 +1,14 @@
 let text = " ";
 let i = 0;
 while (i<6){
-    text += ".  The number is " + i;
+    text += "The number is " + i + ".";
     i++;
 }
 console.log(text);
+/*
+The number is 0.The number is 1.The number is 2.
+The number is 3.The number is 4.The number is 5.
+*/
 
 do {
     text += ".  The number is " + i;
