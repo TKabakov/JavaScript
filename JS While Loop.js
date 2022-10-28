@@ -36,19 +36,25 @@ The number is 0.The number is 1.
 */
 
 let l = 0
-let text2 = "";
+let text4 = "";
 const cars = ["BMW", "Volvo", "Saab", "Ford"];
 
 for( ; cars[l]; ) {
-    text2 += cars[l]+ "  ";
+    text4 += cars[l]+ "  ";
     l++;
 }
-console.log(text2);
+console.log(text4);
+/*
+BMW  Volvo  Saab  Ford 
+*/
 
 let k = 0;
-let text3 = "";
+let text5 = "";
 while (cars[k]){
-    text3 += cars[k] + " ";
+    text5 += cars[k] + " ";
     k++;
 }
-console.log(text3);
+console.log(text5);
+/*
+BMW Volvo Saab Ford
+*/
