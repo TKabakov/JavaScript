@@ -7,10 +7,12 @@ function objectMaker(val) {
     }
 }
 
-console.log(objectMaker(20));
 
-console.log(doubleIt(10));
-console.log(doubleIt(10).toString());
+console.log(objectMaker(20));//{ prop: 20 }
 
-console.log(objectMaker(doubleIt(80)));
+console.log(doubleIt(10));//20
+
+console.log(doubleIt(10).toString());//20
+
+console.log(objectMaker(doubleIt(80)));//{ prop: 160 }(prop gets value 80*2
 
