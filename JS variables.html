@@ -6,6 +6,7 @@
     <body>
         <script>
             //this is a comment!
+            
             /*
             this
             is
@@ -13,19 +14,31 @@
             multi-line
             comment
             */
+            
             /*this is a multy-line comment on a single line!*/
+            
             var petDog = "Rex";
             var petCat = "Pepper";
-            console.log (petDog);
-            console.log (petCat);
-            console.log ("My pet dog's name is:", petDog);
-            console.log ("My pet cat's name is:", petCat);
+
+            console.log (petDog);//Rex
+
+            console.log (petCat);//Pepper
+
+            console.log ("My pet dog's name is:", petDog);//My pet dog's name is: Rex
+
+            console.log ("My pet cat's name is:", petCat);//My pet cat's name is: Pepper
+
             var catSound = "purr";
             var dogSound = "woof";
-            console.log (petDog, "says", dogSound);
-            console.log (petCat, "says", catSound);
-            var catSound = "meow";
-            console.log (petCat, "now says", catSound);
+
+            console.log (petDog, "says", dogSound);//Rex says woof
+            console.log (petDog + " says " + dogSound);//It is the same: Rex says woof
+
+            console.log (petCat, "says", catSound);//Pepper says purr
+
+            var catSound = "meow";//variable catSound gets the value of "meow"
+    
+            console.log (petCat, "now says", catSound);//Pepper now says meow
         </script>
 
         <h1>JavaScript Variables</h1>
