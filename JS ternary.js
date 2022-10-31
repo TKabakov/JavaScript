@@ -16,8 +16,9 @@ function getFee(isMember) {
     return `Howdy, ${name}`;
   }
 
-  console.log(greeting({ name:"Alice"}));
-  console.log(greeting(null));
+  console.log(greeting({ name:"Alice"}));//Howdy, Alice
+  console.log(greeting(null));//Howdy, stranger
+
 
   const age = 20;
   const beverage = age >= 21 ? "Beer" : "Juice";
