@@ -1,5 +1,4 @@
 //Assing a function to a variable
-
 const foo = () => {
     console.log("foobar");
 }
@@ -7,7 +6,6 @@ foo();//Invoke an anonymous fuction by using variable
 //foobar
 
 //Passing a function as an argument
-
 function sayHello() {
     return "Hello, ";
 }
