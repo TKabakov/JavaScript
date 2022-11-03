@@ -13,7 +13,6 @@ const f = function (x){
 
 const numbers = [0, 1, 2, 5, 10];
 const cube = map (f, numbers);
-
 console.log(cube);
 //function returns [ 0, 1, 8, 125, 1000 ]
 
