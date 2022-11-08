@@ -4,8 +4,8 @@ class Animal {
         this.energy = energy;
     }
     isActive(){
-        for( super.energy;super.energy == 0 ; super.energy-- ){
-            if(super.energy == 0){
+        for(let i = super.energy;i == 0 ; super.energy-- ){
+            if(i == 0){
             sleep()
             }
         }
