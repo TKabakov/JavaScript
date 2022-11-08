@@ -41,7 +41,7 @@ class Bird extends Animal{
 }
 
 class HouseCat extends Cat{
-    constructor(color,energy,sound, canJumpHigh, canClimbTrees){
+    constructor(color,energy,sound, canJumpHigh, canClimbTrees, houseCatSound){
     super(color,energy,sound, canJumpHigh, canClimbTrees);
     this.houseCatSound = houseCatSound;
     }
@@ -50,5 +50,11 @@ class HouseCat extends Cat{
             super.makeSound()
             console.log(this.houseCatSound)
         }
+    }
+}
+
+class Tiger extends Cat{
+    constructor(color, energy, tigerSound, canJumpHigh, canClimbTrees){
+    super(color, energy, canJumpHigh, canClimbTrees)   
     }
 }
