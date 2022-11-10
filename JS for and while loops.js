@@ -15,35 +15,32 @@ console.log("Counting comleted!");
 //3
 //4
 //5
-//Counting comleted!
-
+//Counting completed!
 
 //The same can be done by loop
 for (i = 1; i < 6; i++){
     console.log(i);
 }
-console.log("Counting comleted!");
-
+console.log("Counting completed!");
 //1
 //2
 //3
 //4
 //5
-//Counting comleted!
+//Counting completed!
 
 //The same is:
 let m = 1;
 for( ; m < 6; m++){
     console.log(m);
 }
-console.log("Counting comleted!");
-
+console.log("Counting completed!");
 //1
 //2
 //3
 //4
 //5
-//Counting comleted!
+//Counting completed!
 
 //The same is:
 let n = 1;
@@ -53,10 +50,10 @@ while( n < 6) {
     n++;
 }
 console.log(text);
-console.log("Counting comleted!");
+console.log("Counting completed!");
 
 //12345
-//Counting comleted!
+//Counting completed!
 
 console.log("Task 2")
 
@@ -68,7 +65,6 @@ console.log(3);
 console.log(2);
 console.log(1);
 console.log("Countdown finished!");
-
 //5
 //4
 //3
@@ -81,18 +77,16 @@ for (i = 5; i > 0; i--){
     console.log(i);
 }
 console.log("Countdown finished!");
-/*
-5
-4
-3
-2
-1
-Countdown finished!
-*/
+//5
+//4
+//3
+//2
+//1
+//Countdown finished!
 
 console.log("Task 3");
-/*
-Write a "while" loop that will perform exactly the same repetitive code as this:
+//Write a "while" loop that will perform 
+exactly the same repetitive code as this:
 */
 while( n < 6) {
     text += n;
@@ -100,15 +94,12 @@ while( n < 6) {
 }
 console.log(text);
 console.log("Counting comleted!");
-/*
-12345
-Counting comleted!
-*/
+//12345
+//Counting comleted!
 
 console.log("Task 4");
-/*
-Write a "while" loop that will perform exactly the same repetitive code as this:
-*/
+//Write a "while" loop that will perform 
+//exactly the same repetitive code as this:
 let p = 5;
 let text3 = ""
 while ( p > 0 ){
@@ -117,37 +108,32 @@ while ( p > 0 ){
 }
 console.log(text3);
 console.log("Countdown finished!");
-/*
-54321
-Countdown finished!
-console.log("Task 5");
-*/
 
-/*
-Write a "while" loop that will perform exactly the same repetitive code as this:
-*/
+//54321
+//Countdown finished!
+console.log("Task 5");
+//Write a "while" loop that will perform 
+//exactly the same repetitive code as this:
 console.log(2018);
 console.log(2019);
 console.log(2020);
 console.log(2021);
 console.log(2022);
-/*
-2018
-2019
-2020
-2021
-2022
-*/
+
+//2018
+//2019
+//2020
+//2021
+//2022
 
 let f = 2018;
 while (f < 2023){
     console.log(f);
     f++;
 }
-/*
-2018
-2019
-2020
-2021
-2022
-*/
+
+//2018
+//2019
+//2020
+//2021
+//2022
