@@ -68,12 +68,11 @@ catch (ex){
         console.log("outer", ex.message);
     }
 })();
-/*
-The outer "oops" is not thrown 
-because of the return in the finally-block. 
-The same would apply to any value returned from the catch-block.
-*/
+
+//The outer "oops" is not thrown 
+//because of the return in the finally-block. 
+//The same would apply to any value returned from the catch-block.
+
 //Output:
 //inner oops
 //finally
-
