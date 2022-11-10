@@ -9,7 +9,6 @@ try{
 catch(ex){
     console.log("outer", ex.message);
 }
-
 //Output:
 //finally
 //outer oops
