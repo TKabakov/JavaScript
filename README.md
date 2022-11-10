@@ -1,1 +1,1 @@
-All JS codes in tutorials/ 
+All codes in JS tutorials.
