@@ -43,7 +43,7 @@ class HighSpeedTrain extends Train {
     }
     toggleHighSpeed(){
         this.highSpeedOn = !this.highSpeedOn;
-        console.log("Jigh speed status: ", this.highSpeedOn);
+        console.log("High speed status: ", this.highSpeedOn);
     }
     toggleLights(){
         super.toggleLights();
@@ -57,3 +57,34 @@ var highSpeed1 = new HighSpeedTrain (200, false, "gtreen", false);
 
 console.log(train5.toggleLights());//undefined
 console.log(train5.lightsStatus());//Lights on? true
+
+console.log(train5.getPrototype());//{constructor: ƒ, toggleLights: ƒ, lightsStatus: ƒ, getSelf: ƒ, getPrototype: ƒ}
+console.log(highSpeed1.getPrototype());//Train {constructor: ƒ, toggleHighSpeed: ƒ, toggleLights: ƒ}
+
+class StationaryBike {
+    constructor(position, gears) {
+        this.position = position;
+        this.gears = gears;
+    }
+}
+
+class Treadmill {
+    constructor (position, model) {
+        this.position = position;
+        this.model = model;
+    }
+}
+
+class Gym {
+    constructor (openHrs, stationaryBikePos, treadmillPos){
+        this.openHrs = openHrs;
+        this.stationaryBike = new StationaryBike(stationaryBikePos,8);
+        this.treadmill = new Treadmill(treadmillPos,5);
+    }
+}
+
+var boxingGym = new Gym("7-22", "right corner", "left corner");
+
+console.log(boxingGym.openHrs);//7-22
+console.log(boxingGym.stationaryBike);//StationaryBike { position: 'right corner', gears: 8 }
+console.log(boxingGym.treadmill);//Treadmill { position: 'left corner', model: 5 }
