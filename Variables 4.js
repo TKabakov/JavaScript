@@ -50,7 +50,7 @@ console.log("You can change the elements of a constant array");
 //You can create a constat array:
 const cars = ["Saab", "Volvo", "BMW"];
 console.log(cars[0]);//Saab
-cosnole.log(cars[1]);//Volvo
+console.log(cars[1]);//Volvo
 
 //You can change an element in constat array:
 cars[0] = "Toyota";//Toyota changes Saab
