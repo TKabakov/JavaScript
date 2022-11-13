@@ -50,13 +50,15 @@ console.log("You can change the elements of a constant array");
 //You can create a constat array:
 const cars = ["Saab", "Volvo", "BMW"];
 console.log(cars[0]);//Saab
+cosnole.log(cars[1]);//Volvo
+
 //You can change an element in constat array:
 cars[0] = "Toyota";//Toyota changes Saab
 console.log(cars[0]);//Toyota
 console.log(cars[1]);//Volvo
 
 //You can add an element
-cars.push("Audi");
+cars.push("Audi");//Audi is added and it goes at the end of the arrey
 console.log(cars);//[ 'Toyota', 'Volvo', 'BMW', 'Audi' ]
 //But you can NOT reassign the array!!!
 
@@ -86,7 +88,7 @@ console.log(a);//10
     console.log(a);//2
 }
 console.log(a);//10
-//Outside the block is 10
+//Outside the block a is 10
 
 console.log("Redeclaring a variable with const, in another scope, or in another block, is allowed:");
 const b = 2;//Allowed
@@ -99,6 +101,8 @@ console.log(b);//2
     const b = 4;//Allowed
     console.log(b);//4
 }
+
+console.log(b);//2
 
 console.log("Variables defined with const are also hoisted to the top, but not initialized.");
 console.log("Meaning: Using a const variable before it is declared will result in a ReferenceError:")
