@@ -22,6 +22,7 @@ class Gym {
 
 var boxingGym = new Gym("7-22", "right corner", "left corner")
 
-console.log(boxingGym.openHrs) //
-console.log(boxingGym.stationaryBike) //
-console.log(boxingGym.treadmill) //
+console.log(boxingGym.openHrs) //7-22
+console.log(boxingGym.stationaryBike) //StationaryBike { position: 'right corner', gears: 8 }
+console.log(boxingGym.treadmill) //Treadmill { position: 'left corner', modes: 5 }
+
