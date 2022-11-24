@@ -1,4 +1,4 @@
-//In JS INheritance means that you get properties and methods
+//In JS inheritance means that you get properties and methods
 //from the parent blueprint.
 //All insctances inherit from thier bluprint.
 
