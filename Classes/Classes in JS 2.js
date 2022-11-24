@@ -1,6 +1,6 @@
 //JavaScript Classes are templates for JavaScript Objects.
 //The syntax in classes must be written in "strict mode".
-//In "strict mode" you will get an error if you use a variable without declaring it.
+//In "strict mode" you will get an error, if you use a variable without declaring it.
 class Car {
     constructor(name,year){
         this.name = name;
