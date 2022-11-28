@@ -4,7 +4,6 @@
 //and finally the expression to execute if the condition is falsy. 
 //This operator is frequently used as an alternative to an if...else statement.
 
-
 function getFee(isMember) {
     return (isMember ? '$2.00' : '$10.00');
   }
@@ -29,4 +28,4 @@ function getFee(isMember) {
  
   const age = 20;
   const beverage = age >= 21 ? "Beer" : "Juice";
-  console.log(beverage);
+  console.log(beverage);//Juice
