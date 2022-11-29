@@ -91,12 +91,15 @@ console.log(fruits);
 //[ ' Bananas', ' Orange', ' Mango', ' Apple', 'Lemon' ]
 
 //The length property provides an easy way to append new elements to an array without using the push() method.
+
+console.log(fruits);
+[ ' Bananas', ' Orange', ' Mango', ' Apple', 'Lemon' ]
+
 function addElement(){
     fruits[fruits.length] = "Mandarinas";
 }
-console.log(fruits);
-[ ' Bananas', ' Orange', ' Mango', ' Apple', 'Lemon' ]
 addElement();
+
 console.log(fruits);
 [ ' Bananas', ' Orange', ' Mango', ' Apple', 'Lemon', 'Mandarinas' ]
 
@@ -119,14 +122,14 @@ const persona = [];
 persona["firstName"] = "John";
 persona["lastName"] = "Smith";
 persona["age"] = 45;
-console.log(persona[0]);
+console.log(persona[0]);//undefined, the persona array have becomed persona object
 console.log(persona.length);//0
 
 //Avoid using new Array(). Use [] instead.
 const points = new Array(30,50,100);
-const points2 = [30,50,100];//it is the same as new Array
 console.log(points[2]);
 //100
+const points2 = [30,50,100];//it is the same as new Array
 console.log(points2[2]);
 //100
 
@@ -137,10 +140,13 @@ console.log(points2[2]);
 console.log(Array.isArray(points));//true
 console.log(points instanceof Array);//true
 
+//Changing an array element
 const Cars = ["Citroen", "Renault", "Peugeot"];
 let x = Cars[2];
 console.log(x);
 //Peugeot
+console.log(Cars);
+//["Citroen", "Renault", "Peugeot"]
 Cars[0] = "Mazda";
 console.log(Cars);
 //[ 'Mazda', 'Renault', 'Peugeot' ]
