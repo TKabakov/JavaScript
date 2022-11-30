@@ -51,9 +51,26 @@ while( n < 6) {
 }
 console.log(text);
 console.log("Counting completed!");
-
 //12345
 //Counting completed!
+
+//the same can be done with for loop
+let text2 = "";
+for(p = 1; p < 6; p++){
+    text2 += p
+}
+console.log(text2);
+//12345
+
+let k = 1;
+let text = "";
+while( k < 6) {
+    k++;
+    text += k;
+    
+}
+console.log(text);//23456
+console.log("Counting completed!");
 
 console.log("Task 2")
 
@@ -86,8 +103,8 @@ console.log("Countdown finished!");
 
 console.log("Task 3");
 //Write a "while" loop that will perform 
-exactly the same repetitive code as this:
-*/
+//exactly the same repetitive code as this:
+
 while( n < 6) {
     text += n;
     n++;
@@ -105,6 +122,7 @@ let text3 = ""
 while ( p > 0 ){
     text3 += p;
     p = p - 1;
+    //the same as p--
 }
 console.log(text3);
 console.log("Countdown finished!");
