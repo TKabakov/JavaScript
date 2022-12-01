@@ -23,6 +23,6 @@ World
 !
 `
 
-//A template literals allow expression evaluation.
+//A template literal allows expression evaluation.
 console.log(`${1+1+1+1+1} stars!`);
 //5 stars!
