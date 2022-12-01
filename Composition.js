@@ -45,7 +45,7 @@ class DesignerDeveloper {
 const chris = new DesignerDeveloper("Chris", "Coyer");
 console.log(chris);
 
-class Designer{
+class Designer2{
     constructor(firstName,lastName){
         this.firstName = firstName;
         this.lastName = lastName;
@@ -57,7 +57,7 @@ class Designer{
     }
 }
 
-class Developer {
+class Developer2 {
     constructor(firstName,lastName){
         this.firstName = firstName;
         this.lastName = lastName;
@@ -68,4 +68,6 @@ class Developer {
         })
     }
 }
+
+
 
