@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <tilte>How JS diplays the information</tilte>
+    </head>
+    <body>
+        <h2>Using <q>innerHTML</q></h2>
+            <p>document.getElementById("demo1").innerHTML = 5 + 6:</p>
+            <p id="demo1"></p>
+                <script>
+                    document.getElementById("demo1").innerHTML = 5 + 6
+                </script>
+        <div>
+        <h2>Using document.write()</h2>
+            <p>document.write(5+6):</p>
+                <script>
+                    document.write(5+6);
+                </script>
+            <p>Never call document.write after the document has finish loading.
+                It will overwrite the whole documnet.</p>
+        
+            <button type="button" onclick="document.write(5 + 6)">This will erase the document</botton>
+            </div>
+        <h2>Using window.alert()</h2>
+            <p>window.alert(5 + 6)</p>
+        <script>
+            window.alert(5 + 6);
+        </script>
+        <p>The ketword <strong>window</strong> can be skipped.</p>
+            <p>alert(5 + 6)</p>
+        
+        <h2>Using console.log()</h2>
+
+        <h2>The window.print() Method</h2>
+        <button onclick="window.print()">Print this page</button>
+    </body>
+</html>
