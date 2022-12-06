@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Variable Hoisted</title>
+    </head>
+    <body>
+        <p>In JS a variable can be be used <br>
+            before it is declared. <br>
+        We say the the variable is hoisted</p>
+        <p id="demo1"></p>
+
+        <script>
+            x = 5; //Assign 5 to x
+
+            elem = document.getElementById("demo1");//FInd an element
+            elem.innerHTML = x;                     //Display x in the element
+
+            var x; //Declare x
+        </script>
+
+        <p><strong>Hoisting</strong>is the behaivior of moving all the declarations at the top of the current scope.</p>
+        <h3>Initialization</h3>
+        <p>JS hoists only declarations, <strong>not</strong> initializations </p>
+        
+        <p id="demo2"></p>
+
+        <script>
+            var x = 5;
+
+            elem2 = document.getElementById("demo2");
+            elem2.innerHTML = "x is " + x + " and y is " + y;
+
+            var y = 7;
+        </script>
+
+        <p>To avoid bugs, <strong> always </strong> declaire <br>
+            all variable at the becining of every scope.<br>
+            Since JS interprets the code in this way, <br>
+            it is always <strong>a good practice </strong></p>
+    </body>
+</html>
