@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Functions</title>
+    </head>
+    <body>
+        <h2>JavaScript Functions</h2>
+
+        <p>This example calls a function which performs a calculation and returns the result:</p>
+    
+        <p id="demo1"></p>
+        <script>
+            var x = myFunction(4,3);
+            document.getElementById("demo1").innerHTML = x;
+
+            function myFunction(a, b){
+                return a * b;
+            }
+        </script>
+
+        <p>With a function you can reuse code:Define it once and use it many times</p>
+        <p>This example calls a function to convert form Fahrenheit to Celsius:</p>
+    
+        <p id = "demo2"></p>
+
+        <script>
+            function toCelsius (f){
+                return (5/9)*(f-32);
+            }
+            document.getElementById("demo2").innerHTML = toCelsius(70);
+        </script>
+
+        <p>Variables declared within a JS function, become <strong>LOCAL</strong> to the function.</p>
+    
+        <p id="demo3"></p>
+
+        <p id="demo4"></p>
+
+        <script>
+            myFunc();
+
+            function myFunc(){
+                let carName = "Volvo";
+                document.getElementById("demo3").innerHTML =
+                typeof carName + " " + carName
+            //Here carName is a String 
+            //Code here CAN use carName
+            }
+            document.getElementById("demo4").innerHTML =
+            typeof carName;//Here carName is undefined
+            //Code here can NOT use carName
+        </script>
+
+        <p>Since local variables are only recognized inside thier functions, variables with the same name can be used in different functions. </p>
+    
+        <p>Local variables are created when a functions starts and delated when it is completed.</p>
+    </body>
+</html>
