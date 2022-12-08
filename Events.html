@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Events</title>
+    </head>
+    <body>
+        <h2>JS HTML Events</h2>
+        
+        <p>HTML allows event handler attributes, <string>with JS code</string> to be added to HTML element.</p>
+        
+        <button onclick="document.getElementById('demo1').innerHTML=Date()">The time is?</button>
+        
+        <p id="demo1"></p>
+       
+        <p> In the next example, the code changes the content of its own element</p>
+        
+        <button onclick="this.innerHTML=Date()">The time is?</button>
+        
+        <p id="demo2"></p>
+
+        <p>JS code is often several lines long. It is more common to see event attribute calling a function.</p>
+
+        <button onclick="displayDate()">The time is?</button>
+
+        <script>
+            function displayDate () {
+                document.getElementById("demo3").innerHTML=Date();
+            }
+        </script>
+
+        <p id = "demo3"></p>
+
+        <h3>Common HTML Events</h3>
+        <ul>
+            <li><strong>onchange</strong> - A HTML element has been changed.</li>
+            <li><strong>onclick</strong> - The user clicks an HTML element.</li>
+            <li><strong>onmouseover</strong> - The user moves the mouse over an element.</li>
+            <li><strong>onmouseout</strong> - The user moves the mouse away from an element.</li>
+            <li><strong>onkeydown</strong> - The user pushes the kayboard key.</li>
+            <li><strong>onload</strong> - Th browser has finished loading the page. </li>
+        </ul>
+    </body>
+</html>
