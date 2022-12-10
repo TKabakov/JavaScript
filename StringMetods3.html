@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript String Methods</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            let txt = "Apple, Banana, Kiwi";
+            document.getElementById("demo").innerHTML = txt;
+        </script>
+
+        <h3> Replacing String Content with replace().</h3>
+        <p>replace() replaces a specified value with another value in a string.</p>
+        <p>Lets replace "Microsoft"with "W3Schools":</p>
+
+        <button onclick="myFunction()">Tri it</button>
+
+        <p id="demo1">Please, visit Microsoft!</p>
+        <script>
+            function myFunction  (){
+                let text = document.getElementById("demo1").innerHTML;
+                document.getElementById("demo1").innerHTML =
+                text.replace("Microsoft", "W3Schools");
+            }
+        </script>
+        
+        <p>replace():</p>
+        <ul>
+            <li>returns a <strong>new string</strong></li>
+            <li>repalces <strong>only the first</strong> match</li>
+            <li>is case sesitive</li>
+        </ul>
+
+        <div>
+            <p> to replace case insensitive, use a regural expression with an /i flag.</p>
+            <button onclick="myFunction2()">Tri it</button>
+
+            <p id="demo2">Please, visit Microsoft!</p>
+            <script>
+                function myFunction2 (){
+                    let text = document.getElementById("demo2").innerHTML;
+                    document.getElementById("demo2").innerHTML =
+                    text.replace(/MICROSOFT/i, "W3Schools");
+                }
+            </script>
+        </div>
+        
+        <div>
+            <p>To replace all matches, use a <strong>regular expression </strong> with /g flag (global match):</p>
+            <button onclick="myFunction3()">Tri it</button>
+
+            <p id="demo3">Please, visit Microsoft and Microsoft!!</p>
+            <script>
+                function myFunction3 (){
+                    let text = document.getElementById("demo3").innerHTML;
+                    document.getElementById("demo3").innerHTML =
+                    text.replace(/Microsoft/g, "W3Schools");
+                }
+            </script>
+        </div>
+
+        <div>
+            <h3>JavaScript String concat() method</h3>
+            <p> concat() joins two more strings together</p>
+
+            <p id="demo4"></p>
+            <script>
+                let text1 = "Hello ";
+                let text2 = "World";
+                let text3 = text1.concat("", text2);
+                document.getElementById("demo4").innerHTML = text3;
+            </script>
+            <p>The concat() method can be used instead of the plus operator.</p>
+        </div>
+
+        <h4>NOTE! All string methods return a new string.</h4>
+
+        <div>
+            <h3>JavaScript String trim() method</h3>
+            <p> trim() removes the white spaces form both sides of the string:</p>
+            
+            <p id="demo5"></p>
+
+            <script>
+                let text4 = "    Hello World!      ";
+                let text41 = text4.trim();
+                document.getElementById("demo5").innerHTML = text41;
+            </script>
+
+            <p>trimStart() and trimEnd() work like trim(), but removes whitespaces only form the start and the end respectively. </p>
+        </div>
+
+        <div>
+            <h3> JavaScript padStart() and padEnd()</h3>
+            <p> The padStart() methods pads a string with another string:</p>
+
+            <p id="demo6"></p>
+            <script>
+                let text6 = "5";
+                document.getElementById("demo6").innerHTML = text6.padStart(7,"tjk");
+            </script>
+
+            <p>To pad a number, you have to convert it to a string first.</p>
+        </div>
+        
+        <div>
+            <h2>Extracting String Characters</h2>
+            <p>There are 3 methods for extracting string characters:</p>
+            <ul>
+                <li>charAt(<em>position</em>)</li>
+                <li>charCodeAt(<em>position</em>)</li>
+                <li>Property access[]</li>
+            </ul>
+            <h3>JavaScript String charAt()</h3>
+            <p>The charAt() methods returns the chracter at a specified index(position) in a string.</p>
+
+            <p id="demo7"></p>
+
+            <script>
+                let text7 = "Hello World!";
+                let text71 = text7.charAt(6);
+                document.getElementById("demo7").innerHTML = text71;
+            </script>
+        </div>
+
+        <div>
+            <h3>JavaScript charCodeAt()</h3>
+            <p>The charCodeAt() method returns the unicode of the character at a specified index in a string.</p>
+            
+            <p id="demo8"></p>
+
+            <script>
+                let text78 = text7.charCodeAt(6);
+                document.getElementById("demo8").innerHTML = text78;
+            </script>
+        </div>
+
+        <div>
+            <h2>Property Access</h2>
+
+            <p id="demo9"></p>
+
+            <script>
+                let text8 = "HELLO WORLD";
+                let text81 = text8[3];
+                document.getElementById("demo9").innerHTML = text81;
+            </script>
+            <p>Be careful property access might be a little unpredictable.</p>
+        </div>
+        <div>
+            <h3>JavaScript String split()</h3>
+            <p> A string can be converted to an array with the split() method:</p>
+            <p>text.split(",") split on commas</p>
+            <p>text.split("") split on spaces</p>
+            <p>text.split("|") split on pipe</p>
+
+            <p id="demo10"></p>
+            <p id="demo11"></p>
+
+            <script>
+                let text10 = "a, b, c, d, e, f";
+                const myArray = text10.split("");
+                const myArray2 = text10.split(",")
+                document.getElementById("demo10").innerHTML = myArray[0];
+                document.getElementById("demo11").innerHTML = myArray2[3];
+            </script>
+        </div>
+    </body>
+</html>
