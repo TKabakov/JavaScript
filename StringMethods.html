@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS String Methods</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            let text ="Apple, Banana, Kiwi"
+            document.getElementById("demo").innerHTML ="The string is :" + "<br>" + text;
+        </script>
+
+        <h3>Tke slice() Method</h3>
+        <p>The slice () extracts a part of a string and returns  the extracted part in a new string.</p>
+        <p>The method takes 2 parameters: start position counting from 0 and end position(optional).</p>
+
+        <p id="demo1"></p>
+        <script>
+            let part1 = text.slice(2, 17);
+            document.getElementById("demo1").innerHTML = part1
+            //ple, Banana, Ki
+        </script>
+
+        <p>If the second parameter is omitted, the method will slice out the rest of the string:</p>
+        <p id="demo2"></p>
+
+        <script>
+            let part2 = text.slice(9);
+            document.getElementById("demo2").innerHTML = part2;
+            //nana, Kiwi
+        </script>
+
+        <p>If a parameter is negative , the position is counted from the end of the string.</p>
+        <p>The next example is from position 2 to position -2:</p>
+
+        <p id="demo3"></p>
+        <script>
+            let part3 = text.slice(2,-2);
+            document.getElementById("demo3").innerHTML = part3;
+            //ple, Banana, Ki
+        </script>
+
+        <h3>JavaScript String substring()</h3>
+        <p>The substring() is similar to slice() with the diffrence that start and end values less that 0 are treted as 0.</p>
+    
+        <p id="demo4"></p>
+        <script>
+            let part4 = text.substring(2,17);
+            document.getElementById("demo4").innerHTML = part4;
+            //ple, Banana, Ki
+        </script>
+
+        <h3>JavaScript String substr()</h3>
+        <p>The substr() is similar to slice(), with the difference that the second parameter specifies the length of the extracted part.</p>
+
+        <p id="demo5"></p>
+        <script>
+            let part5 = text.substr(2,15);
+            document.getElementById("demo5").innerHTML = part5;
+            //ple, Banana, Ki
+        </script>
+
+        <p>If you omit second parameter, substr() will slice out the rest of the string.</p>
+        <p id="demo6"></p>
+        <script>
+            let part6 = text.substr(2);
+            document.getElementById("demo6").innerHTML = part6;
+            //ple, Banana, Kiwi
+        </script>
+
+        <p>When the first parameter is negative, the position counts from the end.</p>
+        <p id="demo7"></p>
+        <script>
+            let part7 = text.substr(-10);
+            document.getElementById("demo7").innerHTML = part7;
+            //nana, Kiwi
+        </script>
+    </body>
+</html>
