@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS NaN number</title>
+    </head>
+    <body>
+        <div>
+            <h2>NaN - Not a Number</h2>
+            <p><strong>NaN</strong> is JS reserved word for a number that is not a legal number.</p>
+            <p>If you try to do arithmetic with non-numeric string the result will be <strong>NaN</strong></p>
+            
+            <p id="demo8"></p>
+            <script>
+                let string5 = 100 / "Apple";
+                document.getElementById("demo8").innerHTML = string5;
+                //NaN
+            </script>
+            </div>
+    
+            <div>
+                <p>You can use the global JS function <strong>isNaN()</strong> to find out if a value is not a number:</p>
+    
+                <p id="demo9"></p>
+    
+                <script>
+                    document.getElementById("demo9").innerHTML = isNaN(string5);
+                    //true
+                </script>
+            </div>
+    
+            <div>
+                <p>If you use <strong>NaN</strong> in a arithmetical operation, the rsult will be NaN:</p>
+                <p id="demo10"></p>
+    
+                <script>
+                    let m = NaN + 5;
+                    document.getElementById("demo10").innerHTML = "NaN + 5 = " + m;
+                    //NaN + 5 = NaN
+                </script>
+            </div>
+    
+            <div>
+                <p id="demo11"></p>
+    
+                <script>
+                    let string11 = NaN + "5";
+                    document.getElementById("demo11").innerHTML = "NaN + '5' = " + string11 + "//string";
+                    //NaN + '5' = NaN5//string
+                </script>
+            </div>
+    
+            <div>
+                <p><strong>NaN</strong> is a Number</p>
+                <p id="demo12"></p>
+    
+                <script>
+                    document.getElementById("demo12").innerHTML = "typeof(NaN) = "+ typeof(NaN);
+                    //typeof(NaN) = number
+                </script>
+            </div>
+    </body>
+</html>
