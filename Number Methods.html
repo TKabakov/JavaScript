@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Number Methods</title>
+    </head>
+    <body>
+        <h2><strong>toString() Method</strong></h2>
+        <p><strong>toString() Method</strong> returns a numbers as a string.</p>
+
+        <p id="demo1"></p>
+        <script>
+            let a = 123;
+            document.getElementById("demo1").innerHTML =
+            a.toString() + "<br>" +          //variable
+            (123).toString() + "<br>" +        //leterals
+            (100 + 23).toString()            //expression
+        </script>
+
+        <h2>toExponential() Method</h2>
+        <p><strong>toExponential() Method</strong> returns a string, with a number rounded and written using exponential notation.</p>
+        <p>A parameter defines the number of characters behind the decimal point:</p>
+    
+        <p id="demo2"></p>
+        <script>
+            let b = 9.656;
+            document.getElementById("demo2").innerHTML =
+            b.toExponential() + "<br>" +    //9.656e+0
+            b.toExponential(2) + "<br>" +   //9.66e+0
+            b.toExponential(6);              //9.656000e+0
+        </script>
+
+        <h2>toFixed() Method</h2>
+        <p><strong>toFixed()</strong> returns a string, with the number written with a specified number of decimals:</p>
+        
+        <p id="demo3"></p>
+        <script>
+            document.getElementById("demo3").innerHTML =
+            b.toFixed(0) + "<br>" +         //10
+            b.toFixed(2) + "<br>" +         //9.66
+            b.toFixed(6);                   //9.656000
+        </script>
+        <p><strong>toFixed(2)</strong> is perfect to work with money.</p>
+
+        <h2>toPrecision() Method</h2>
+        <p><strong>toPrecision()</strong> returns a string, with number written with a specified lenght:</p>
+        
+        <p id="demo4"></p>
+
+        <script>
+            document.getElementById("demo4").innerHTML =
+            b.toPrecision() + "<br>" +      //9.656
+            b.toPrecision(2) + "<br>" +     //9.7
+            b.toPrecision(6);               //9.65600
+        </script>
+
+        <h2>The valueOf() Method</h2>
+        <p><strong>valueOf()</strong> returns a number(primitive or object) as a number:</p>
+    
+        <p id="demo5"></p>
+
+        <script>
+            document.getElementById("demo5").innerHTML =
+            b.valueOf() + "<br>" +          //9.656
+            (9.656).valueOf() + "<br>" +    //9.656
+            (9 + 0.656).valueOf();          //9.656
+        </script>
+
+        <h2>Number() Method</h2>
+        <p>The <strong>Number()</strong> can be used to convert JS variables to numbers:</p>
+        
+        <p id="demo6"></p>
+        <script>
+            document.getElementById("demo6").innerHTML =
+            Number(true) + "<br>" +         //1
+            Number(false) + "<br>" +        //0
+            Number("10")+ "<br>" +          //10
+            Number(" 19") + "<br>" +        //19
+            Number(" 10 ") + "<br>" +       //10
+            Number("10.33") + "<br>" +      //10.33
+            Number("10,33") + "<br>" +      //NaN
+            Number("John")                  //NaN
+        </script>
+        <p>If the number cannot be converted, <strong>NaN</strong> is returned.</p>
+
+        <h2> Number() Methods used with dates</h2>
+
+        <p id="demo7"></p>
+
+        <script>
+            document.getElementById("demo7").innerHTML =
+            Number(new Date("1970-01-01")) + "<br>" +
+            Number(new Date("1970-01-02")) + "<br>" +
+            Number(new Date()) + "<br>" +
+            Number(new Date("2022-12-11"));
+        </script>
+    </body>
+</html>
