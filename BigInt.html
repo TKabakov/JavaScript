@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <titel>JS BigInt</titel>
+    </head>
+    <body>too 
+        <h4>JS <strong>BigInt</strong> variables are used to store 
+        big integer values that are too big t be represented by <strong>Number</strong>.</h4>
+        <p>JS integers are only accurate up to 15 digits:</p>
+        
+        <p id="demo1";></p>
+       
+        <script>
+            let a = 999999999999999;
+            let b = 9999999999999999;
+            document.getElementById("demo1").innerHTML=
+            "999999999999999 = " + a + "<br>" +
+            "9999999999999999 = " + b;
+        </script>
+
+        <p id="demo2"></p>
+        
+        <script>
+            let c = BigInt("9999999999999999");
+            document.getElementById("demo2").innerHTML= c;
+        </script>
+
+        <p>To create <strong>BigInt</strong> thete are two ways:</p>
+        <ul>
+            <li>append <strong>n</strong> to the end;</li>
+            <li>call <strong>BigInt</strong> with integre in quotes.</li>
+        </ul>
+
+        <p id="demo3"></p>
+
+        <script>
+            let d = 123456789012345n;
+            let e = BigInt("123456789012345");
+            document.getElementById("demo3").innerHTML=
+            "123456789012345n = " + d + "<br>" +
+            'BigInt("123456789012345") = ' + e;
+        </script>
+
+        <p id="demo4"></p>
+
+        <script>
+            let t = typeof e;
+            document.getElementById("demo4").innerHTML = t;
+        </script>
+
+        <p>Operators that can be used with <strong>Number</strong>, 
+        can also be used on a <atrong>BigInt</atrong>.</p>
+
+        <p id="demo5"></p>
+
+        <script>
+            let m = d * e;
+            document.getElementById("demo5").innerHTML = m;
+        </script>
+
+        <p>Arithmetic between a <strong>BigInt</strong> and a <strong>Number</strong> is not allowed.</p>
+    
+        <p id="demo6"></p>
+
+        <script>
+            let k = Number(d) / 2;
+            document.getElementById("demo6").innerHTML = k;
+        </script>
+
+        <p><strong>BigInt</strong> can also be written in hexadecimal, octal or binnary notation:</p>
+
+        <p id="demo7"></p>
+        <script>
+            let hex = 0x20000003n;
+            let oct = 0o40000000000003n;
+            let bin = 0b10000000001001001000100101001011n;
+            document.getElementById("demo7").innerHTML =
+            "0x20000003n = " + hex + "<br>" + 
+            "0o40000000000003n = " + oct + "<br>" + 
+            + "0b10000000001001001000100101001011n = " + bin;
+        </script>
+        
+        <h2>Integer Precision</h2>
+        <p>Is 9007199254740992 equal to 9007199254740993?</p>
+
+        <p id="demo8"></p>
+
+        <script>
+            let comparison = 9007199254740992 === 9007199254740993;
+            document.getElementById("demo8").innerHTML = comparison + "???";//true
+        </script>
+
+        <h3>Maximum and Minimum Sfe Integers</h3>
+        <p>ES6 added max and min properties to the Number objects</p>
+
+        <p id="demo9"></p>
+
+        <script>
+            let max = Number.MAX_SAFE_INTEGER;
+            let min = Number.MIN_SAFE_INTEGER;
+            document.getElementById("demo9").innerHTML=
+            max + "<br>" + min;
+            //9007199254740991
+            //-9007199254740991
+        </script>
+    </body>
+</html>
