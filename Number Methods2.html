@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Number Methods</title>
+    </head>
+    <body>
+        <h3>parseInt() Method</h3>
+        <p><strong>parseInt()</strong> parses a string and returns a whole numner.
+        Spaces are allowed. Only the first nember is return.</p>
+        
+        <p id="demo0"></p>
+
+        <script>
+            document.getElementById("demo0").innerHTML =
+            parseInt("-10") + "<br>" +          //-10
+            parseInt("-10.33") + "<br>" +       //-10
+            parseInt("10.33") + "<br>" +        //10
+            parseInt("20 30 40") + "<br>" +     //20
+            parseInt("25 years") + "<br>" +     //25
+            parseInt("years 25");               //NaN
+        </script>
+
+        <h3>parseFloat() Method</h3>
+        <p><strong>parseFloat()</strong> parses a string and returns number. Spaces are allowed. Only the first number is returned.</p>
+    
+        <p id="demo1"></p>
+
+        <script>
+            document.getElementById("demo1").innerHTML =
+            parseFloat("10") + "<br>" +         //10
+            parseFloat("10.33") + "<br>" +  	//10.33
+            parseFloat("20 30 40 ") + "<br>" +  //20
+            parseFloat("25 years") + "<br>"+    //25
+            parseFloat("years 25");             //NaN
+        </script>
+
+        <h3>Number.isIntegr() Method</h3>
+        <p>Returns <strong>true</strong> if the argument is integer.</p>
+    
+        <p id="demo2"></p>
+
+        <script>
+            document.getElementById("demo2").innerHTML =
+            Number.isInteger(10) + "<br>" +
+            Number.isInteger(10.5);
+        </script>
+
+        <h3>Number.isSafeInteger() Method</h3>
+        <p>A safe integer is an integer that can be exactly repersented as a double precision number.</p>
+
+        <p id="demo3"></p>
+
+        <script>
+            document.getElementById("demo3").innerHTML =
+            Number.isSafeInteger(10) + "<br>" +
+            Number.isSafeInteger(12345678901234567890);
+        </script>
+
+        <p>Safe integres are all integrs fron -(2^53 - 1) to + (2^53 - 1).</p>
+        
+        <h3>Number.parseFloat() Method</h3>
+
+        <p><strong>Number.parseFloat()</strong> works the same way as <string>parseFloat()</string> method.</p>
+    
+        <h3>Number.parseInt() Method</h3>
+
+        <p><strong>Number.parseInt()</strong> works the same way as <string>parseInt()</string>.</p>
+    </body>
+    <p>The perpouse is to make it easier to use the same JS code outside the browser.</p>
+</html>
