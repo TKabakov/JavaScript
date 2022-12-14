@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Regural Expression</title>
+    </head>
+    <body>
+        <h3>RegExp</h3>
+        <p><strong>RegExp</strong> is often used with <strong>search()</strong> and <strong>relace()</strong>.</p>
+
+        <p id = "demo1"></p>
+        <p id = "demo2"></p>
+
+
+        <script>
+            let txt1 = "Visit W3Schools";
+            let n = txt1.search(/w3schools/i);
+            document.getElementById("demo1").innerHTML = n;         //6
+
+            let result1 = txt1.replace(/w3school/i, "Microsoft");
+            document.getElementById("demo2").innerHTML = result1;   //Visit Microsofts
+        </script>
+
+        <h4>global match <strong>g</strong></h4>
+        
+        <p id = "demo3"></p>
+    
+
+        <script>
+            let txt3= "Is this all is?";
+            let result3 = txt3.match(/is/g);
+
+            document.getElementById("demo3").innerHTML = result3;   //is,is
+        </script>
+
+        <h4>multiline search with <strong>m</strong></h4>
+        
+        <p id = "demo4"></p>
+
+        <script>
+            let txt4 = "\nIs th\nis it?";
+            let resutl4 = txt4.match(/^is/m);
+            document.getElementById("demo4").innerHTML = resutl4;
+        </script>
+
+        <h3>RegExp Patterns</h3>
+        <p>[abc] finds any character between the square brackets</p>
+
+        <p id="demo5"></p>
+
+        <p>[0-9] finds any digits between the square brackets.</p>
+
+        <p id="demo6"></p>
+
+        <p>(x | y) finds any of the alternatives separated with |.</p>
+
+        <p id="demo7"></p>
+
+        <script>
+            let txt5 = "Is this all there is?";
+            let result5 = txt5.match(/[ht]/g);
+
+            let txt6 = "135790";
+            let result6 = txt6.match(/[1-5]/g);
+
+            let txt7 = "re, green, red, green, gren, gr, blue, yellow";
+            let result7 = txt7.match(/(red|green)/g)
+
+            document.getElementById("demo5").innerHTML = result5;   //t,h,t,h
+
+            document.getElementById("demo6").innerHTML = result6;   //1,3,5
+
+            document.getElementById("demo7").innerHTML = result7;   //green,red,green
+        </script>
+
+        <h4>Metachrecters</h4>
+        <p><strong>\d</strong> finds a digit</p>
+
+        <p id="demo8"></p>
+
+        <p><strong>\s</strong> finds a whitespace character</p>
+        <p><strong>\b</strong> finds a match at the beggining of the word.</p>
+
+        <script>
+            let txt8 = "Give 100%!";
+            let result8 = txt8.match(/\d/g);
+
+            document.getElementById("demo8").innerHTML = 
+            "Give 100%! =>  "+ result8;   //1,0,0
+        </script>
+
+        <h3>test()</h3>
+        <p>It searches a string for a pattern, and returns true or false.</p>
+
+        <p id="p01">The best things in life are free!</p>
+        <p id="demo9"></p>
+
+        <script>
+            const pattern = /e/;
+            let txt9 = document.getElementById("p01").innerHTML;
+            document.getElementById("demo9").innerHTML = pattern.test(txt9);    //true
+        </script>
+    </body>
+</html>
