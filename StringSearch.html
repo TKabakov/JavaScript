@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<htm>
+    <head>
+        <title>String Search</title>
+    </head>
+    <body>
+        <h3>indexOf()</h3>
+        <p>Returns the index of position of the first occurrence of a string in the string.</p>
+
+        <p id="demo1"></p>
+
+        <script>
+            let str = "Please, locate where 'locate' occurs!";
+            document.getElementById("demo1").innerHTML =
+            str.indexOf("locate");//8
+        </script>
+
+        <h3>lastIndexOf()</h3>
+        <p>Returns the index of the <strong>last</strong> occurrence of a string in a string.</p>
+
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <script>
+            document.getElementById("demo2").innerHTML =
+            str.lastIndexOf("locate");//22
+            document.getElementById("demo3").innerHTML =
+            str.lastIndexOf("John");//-1(when the string is not found)
+            document.getElementById("demo4").innerHTML =
+            str.lastIndexOf("locate", 15);//8
+        </script>
+        <p><strong>lastIndexOf()</strong> searches backwards(from end to the beginning.</p>
+
+        <h3>search() method</h3>
+        <p>Returns the position of string or regular expression in a string</p>
+        <p id="demo5"></p>
+        <p id="demo6"></p>
+        <script>
+            document.getElementById("demo5").innerHTML =
+            str.search("locate");//8
+            document.getElementById("demo6").innerHTML =
+            str.search(/locate/);//8
+        </script>
+        <p>Allthough <strong>search()</strong> and <strong>indexOf() look very simmilar, there are feww differances:</strong></p>
+        <ul>
+            <li><strong>search()</strong> cannot take a second start position argument;</li>
+            <li><strong>indexOf()</strong> cannot take regular expression as argument.</li>
+        </ul>
+
+        <p>match()</p>
+        <p>Returns an <strong>array</strong> containing the result of matching a string against a string ot regular expression.</p>
+    
+        <p id="demo7"></p>
+        <p id="demo8"></p>
+        <p id="demo9"></p>
+        <p id="demo10"></p>
+        <p id="demo11"></p>
+
+        <script>
+            let txt7 = "The rain in SPAIN stays mainly in the plain";
+            const myArr7 = txt7.match("ain");
+            document.getElementById("demo7").innerHTML =
+            myArr7.length + " " + myArr7;                     //1 ain
+
+            const myArr8 = txt7.match(/ain/);               //regural expression
+            document.getElementById("demo8").innerHTML =
+            myArr8.length + " " + myArr8;                     //1 ain
+
+            const myArr9 = txt7.match(/ain/g);               //regural expression, global search
+            document.getElementById("demo9").innerHTML =
+            myArr9.length + " " + myArr9;                   //3 ain,ain,ain
+        
+            const myArr10 = txt7.match(/ain/gi);               //regural expression, global search, case insensitive
+            document.getElementById("demo10").innerHTML =
+            myArr10.length + " " + myArr10;                   //4 ain,AIN,ain,ain
+        
+            document.getElementById("demo11").innerHTML =
+            "typeof myArr10: " + typeof myArr10;               //typeof myArr10: object
+        </script>
+
+            <p>If the regular expression does not include the <strong>g</strong> modifier, the match() will return only the first in the string.</p>
+    
+            <p id="demo12"></p>
+
+            <script>
+            let txt12 = "I love cats. Cats are very easy to love. Cats are very popular."
+            const iterator = txt12.matchAll("Cats");
+            
+            document.getElementById("demo12").innerHTML = Array.from(iterator);
+            </script>   
+            
+            <p id="demo13"></p>
+
+            <p>The similar resut can be done by global regural expression</p>
+            <script>
+            let txt13 = "I love cats. Cats are very easy to love. Cats are very popular."
+            const iterator13 = txt13.match(/Cats/g);
+            
+            document.getElementById("demo13").innerHTML = Array.from(iterator13);
+            </script>  
+        </body>
+</htm>
