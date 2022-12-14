@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>String Search Methods</title>
+    </head>
+    <body>
+        <h3>includes()</h3>
+        <p>Returns true if a string contains a specific value.</p>
+
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+
+        <script>
+            let txt1 = "Hello world, welcome to the universe.";
+            document.getElementById("demo1").innerHTML =
+            txt1.includes("world");                    //true
+
+            document.getElementById("demo2").innerHTML =
+            txt1.includes("world", 12);                 //start at position 12, false
+        </script>
+
+        <h3>startsWith()</h3>
+        <p>Returns <strong>true</strong> if a string begins with a specific value.</p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+
+        <script>
+            document.getElementById("demo3").innerHTML =
+            txt1.startsWith("Hello");                   //true
+
+            document.getElementById("demo4").innerHTML =
+            txt1.startsWith("world");                   //false
+            
+            document.getElementById("demo5").innerHTML =
+            txt1.startsWith("world", 6);                //star position can be specified
+        </script> 
+
+        <h3>endsWith()</h3>
+        <p>works the same way as startsWith(), but returns <strong>true</strong> when ends with a specified value.</p>
+    </body>
+</html>
