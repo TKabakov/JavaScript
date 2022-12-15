@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Template Literals</title>
+    </head>
+    <body>
+        <h2>Template Literals</h2>
+        <p>Synonyms:</p>
+        <ul>
+            <li>Template Strings;</li>
+            <li>String Templates;</li>
+            <li>Back-Tics Syntax.</li>
+        </ul>
+
+        <p>With teplate literals, you can use both single and double quotes inside te string:</p>
+    
+        <p id="demo1"></p>
+
+        <script>
+            let txt1 = `He's often called "Johnny"`;
+            document.getElementById("demo1").innerHTML = txt1;
+        </script>
+
+        <p>Template literals allows multiline strings:</p>
+
+        <p id="demo2"></p>
+
+        <script>
+        let txt2 =
+        `The quick
+        brown fox
+        jumps over
+        the lazy dog.`
+        document.getElementById("demo2").innerHTML = txt2;
+        </script>
+
+        <h3>Variable Substitutions</h3>
+
+        <p id="demo3"></p>
+
+        <script>
+            let firstName = "John";
+            let lastName = "Doe";
+            let txt3 = `Welcome ${firstName}, ${lastName}!`;
+
+            document.getElementById("demo3").innerHTML = txt3;
+        </script>
+
+        <h3>Expression Substitution</h3>
+
+        <p id="demo4"></p>
+
+        <script>
+            let price = 10;
+            let VAT = 0.25;
+
+            let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+
+            document.getElementById("demo4").innerHTML = "price = "+ price + "<br>" +
+            "VAT = " + VAT + "<br>" 
+            + total;
+        </script>
+
+        <h3>HTML Templates</h3>
+
+        <p id="demo5"></p>
+
+        <script>
+            let header = "Template Literals";
+            let tags = ["template literals", "javascript", "es6"];
+
+            let html = `<h2>${header}</h2><ul>`;
+
+            for(const i of tags) {
+                html += `<li>${i}</li>`;
+                    }
+
+            html +=`</ul>`;
+
+            document.getElementById("demo5").innerHTML = html;
+        </script>
+    </body>
+</html>
