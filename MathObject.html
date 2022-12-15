@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Math Objects</title>
+    </head>
+    <body>
+        <h2>Math Properies (Consatants)</h2>
+        <p>JS provides 8 mathmatical constants that can be accessed as Math properies:</p>
+
+        <p id="demo1"></p>
+
+        <script>
+            document.getElementById("demo1").innerHTML =
+        "<p><b>Math.E: </b>" + Math.E + "</p>"+ 
+        "<p><b>Math.PI: </b>" + Math.PI + "</p>" +
+        "<p><b>Math.SQRT2: </b>" + Math.SQRT2 + "</p>" +
+        "<p><b>Math.SQRT1_2: </b>" + Math.SQRT1_2 + "</p>" +
+        "<p><b>Math.LN2: </b>" + Math.LN2 + "</p>" +
+        "<p><b>Math.LN10: </b>" + Math.LN10 + "</p>" +
+        "<p><b>Math.LOG2E: </b>" + Math.LOG2E + "</p>"+
+        "<p><b>Math.LOG10E: </b>" + Math.LOG10E + "</p>"       
+        </script>
+
+        <h2>Math.round()</h2>
+
+        <p id="demo2"></p>
+
+        <script>
+            document.getElementById("demo2").innerHTML =
+            "<p> Math.round(4.6) = " + Math.round(4.6) + "</p>" +
+            "<p> Math.round(4.5) = " + Math.round(4.5) + "</p>" +
+            "<p> Math.round(4.4) = " + Math.round(4.4) + "</p>";
+        </script>
+
+        <h2>Math.ceil()</h2>
+        <p>Rounds up to the nearest integer</p>
+        <p id="demo3"></p>
+
+        <script>
+            document.getElementById("demo3").innerHTML =
+            "<p> Math.ceil(4.9) =" + Math.ceil(4.9) + "</p>" +
+            "<p> Math.ceil(4.7) =" + Math.ceil(4.7) + "</p>" +
+            "<p> Math.ceil(4.4) =" + Math.ceil(4.4) + "</p>" +
+            "<p> Math.ceil(4.2) =" + Math.ceil(4.2) + "</p>" +
+            "<p> Math.ceil(-4.2) =" + Math.ceil(-4.2) + "</p>";
+        </script>
+
+        <h2>Math.floor()</h2>
+        <p>Rounds down to the nearest integer</p>
+        <p id="demo4"></p>
+
+        <script>
+            document.getElementById("demo4").innerHTML =
+            "<p> Math.floor(4.9) =" + Math.floor(4.9) + "</p>" +
+            "<p> Math.floor(4.7) =" + Math.floor(4.7) + "</p>" +
+            "<p> Math.floor4.4) =" + Math.floor(4.4) + "</p>" +
+            "<p> Math.floor(4.2) =" + Math.floor(4.2) + "</p>" +
+            "<p> Math.floor(-4.2) =" + Math.floor(-4.2) + "</p>";
+        </script>
+
+        <h2>Math.trunc()</h2>
+        <p>Returns the integer part of a number. </p>
+        <p id="demo5"></p>
+
+        <script>
+            document.getElementById("demo5").innerHTML =
+            "<p> Math. trunc(4.9) =" + Math.trunc(4.9) + "</p>" +
+            "<p> Math.trunc(4.7) =" + Math.trunc(4.7) + "</p>" +
+            "<p> Math.trunc4.4) =" + Math.trunc(4.4) + "</p>" +
+            "<p> Math.trunc(4.2) =" + Math.trunc(4.2) + "</p>" +
+            "<p> Math.trunc(-4.2) =" + Math.trunc(-4.2) + "</p>";
+        </script>
+
+        <h2>Math.sign()</h2>
+        <p>Returns -1 if number is negatice, 1 if it is positive and 0, if it is 0.</p>
+
+        <p id="demo6"></p>
+
+        <script>
+            document.getElementById("demo6").innerHTML =
+            "<p>Math.sign(-4) = " + Math.sign(-4) + "</p>" +
+            "<p>Math.sign(0) = " + Math.sign(0) + "</p>" +
+            "<p>Math.sign(4) = " + Math.sign(4) + "</p>"
+        </script>
+
+        <h2>Math.pow()</h2>
+        <p>Returns the value of x to the power of y.</p>
+
+        <p id="demo7"></p>
+
+        <script>
+            document.getElementById("demo7").innerHTML =
+            "<p>Math.pow(4,6) = " + Math.pow(4,6) + "</p>"
+        </script>
+        
+        
+        <h2>Math.sqrt()</h2>
+
+        <p id="demo8"></p>
+
+        <script>
+            document.getElementById("demo8").innerHTML =
+            "<p>Math.sqrt(64) = " + Math.sqrt(64) + "</p>"
+        </script>
+
+        
+        <h2>Math.abs()</h2>
+        <p>Returns the absolute (positive) value of x.</p>
+
+        <p id="demo9"></p>
+
+        <script>
+            document.getElementById("demo9").innerHTML =
+            "<p>Math.abs(-4,6) = " + Math.abs(-4,6) + "</p>"
+        </script>
+    </body>
+</html>
