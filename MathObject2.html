@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Math Object</title>
+    </head>
+    <body>
+        <h2>Math.sin()</h2>
+        <p>Works in radians. If you want ro work in degrees thy have to be converted in radians.</p>    
+        <p id="demo1"></p>
+            
+            <script>
+                document.getElementById("demo1").innerHTML =
+                "Math.sin(90*Math.PI/180) = " + Math.sin(90*Math.PI/180);
+            </script>
+
+    <h2>Math.cos()</h2>
+        <p>Works in radians. If you want ro work in degrees thy have to be converted in radians.</p>    
+        <p id="demo2"></p>
+            
+            <script>
+                document.getElementById("demo2").innerHTML =
+                "Math.cos(0*Math.PI/180) = " + Math.cos(0*Math.PI/180);
+            </script>
+
+    <h2>Math.max() and Math.min()</h2>
+        
+        <p id="demo3"></p>
+            
+            <script>
+                document.getElementById("demo3").innerHTML =
+                "Math.max(0,10,-20, 200, -100) = " + Math.max(0,10,-10, 200, -100) +
+                "<br>" +
+                "Math.min(0,10,-20, 200, -100) = " + Math.min(0,10,-10, 200, -100);
+            </script>
+
+        <h2>Math.random</h2>
+        <p> Returns a random number between <b>0</b> and <b>1</b>.</p>
+        <p id="demo4"></p>
+            
+            <script>
+                document.getElementById("demo4").innerHTML =
+                "Math.random() = " + Math.random();
+            </script>
+
+        <h2>Math.log()</h2>
+        <p>Returns the natural logarithm of x.</p>
+
+        <p id="demo5"></p>
+
+        <script>
+            document.getElementById("demo5").innerHTML =
+            "Math.log(1) = " + Math.log(1) + "<br>" +
+            "Math.log(2) = " + Math.log(2) + "<br>" +
+            "Math.log(3) = " + Math.log(3);
+        </script>
+
+        <h2>Math.log2()</h2>
+        <p>Returns the base 2 logarithm of x.</p>
+
+        <p id="demo6"></p>
+        <script>
+            document.getElementById("demo6").innerHTML =
+            "Math.log2(8) = " + Math.log2(8) + "<br>" +
+            "Math.log2(32) = " + Math.log2(32);
+        </script>
+
+        <h2>Math.log10()</h2>
+        <p>Returns the base 10 logarithm of x.</p>
+        <p>Returns how many times must we multiply 10 to get x.</p>
+
+        <p id="demo6"></p>
+        <script>
+            document.getElementById("demo6").innerHTML =
+            "Math.log2(8) = " + Math.log2(8) + "<br>" +
+            "Math.log2(32) = " + Math.log2(32);
+        </script>
+
+    </body>
+</html>
