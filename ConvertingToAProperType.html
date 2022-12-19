@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<htm>
+    <head>
+        <tilte>Converting to a proper type before comparison</tilte>
+    </head>
+    <body>
+
+        <h2> JavaScript Comparison</h2>
+
+        <p>Input your age and click the butoon:</p>
+        
+        <input id="age" value="18"/>
+
+        <button onclick="myFunction()">Try it</button>
+
+        <p id="demo"></p>
+
+        <script>
+            function myFunction(){
+            let age = Number(document.getElementById("age").value);
+            let voteable;
+            if (isNaN(age)){       //The same as !isNaN and exchanginf if cose and else if codes
+            voteable = "Input is not a number"
+            }   else {
+            voteable = (age < 18) ? "Too young" : "Old enough"
+            } 
+        document.getElementById("demo").innerHTML = voteable + " to vote";
+        }
+        </script>
+    </body>
+</htm>
