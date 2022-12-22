@@ -1,0 +1,14 @@
+const Array = [];
+Array[0] = 1;
+Array[1] = 2;
+Array[2] = 3;
+Array[3] = 4;
+Array[4] = 5;
+Array[5] = 6;
+Array[6] = 7;
+Array[7] = 8;
+Array[8] = 9;
+Array[9] = 10;
+Array[10] = 111;
+Array[11] = 1111;
+Array[12] = 11111;
