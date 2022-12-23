@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Function to compare two values</title>
+    </head>
+    <body>
+        <button onclick="myFunction1()">Sort Alphabetically</button>
+        <button onclick="myFunction2()">Sort Numerically</button>
+        <p>Alphabetically:</p>
+        <p id="demo1"></p>
+        <p>Numerically:</p>
+        <p id="demo2"></p>
+
+        <script>
+            const points = [40, 20, 100, 300, -30, 1, 5, 25, 10, -60, 0];
+
+            function myFunction1() {
+                points.sort();
+                document.getElementById("demo1").innerHTML = points;
+            }
+
+            function myFunction2(){
+                points.sort(function(a, b){
+                    return a - b});
+                    document.getElementById("demo2").innerHTML = points;
+                }
+
+        </script>
+    </body>
+</html>
