@@ -9,7 +9,7 @@ const letters1 = new Set(["a", "b", "c"]);
 console.log(letters1);
 console.log(letters1.size);     //3
 
-//Creating Ste and add values:
+//Creating Set and add values:
 const letters2 = new Set();
 console.log(letters2);      //Set(0) {}
 
@@ -73,7 +73,6 @@ console.log(letters2.values());
 //[Set Iterator] { 'e', 'f', 'g', 'h', 'k', 'l', 'm' }
 
 //You can use the Iterator object to access the elements.
-
 let txt3 = "";
 for(const x of letters2.values()){
     txt3 += x + " ";
