@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Array Random Sort</title>
+    </head>
+    <body>
+        <h2>JavaScript Array Sort</h2>
+        <h3>The Fisher Yates Method</h3>
+        <p>Click the button (again and again) to sort the array in random order.</p>
+
+        <button onclick="myFunction()">Try it</button>
+
+        <p id="demo"></p>
+
+        <script>
+            const points = [40, 20, 100, 300, -30, 1, 5, 25, 10, -60, 0];
+            document.getElementById("demo").innerHTML = points;
+
+            function myFunction(){
+                for (let i =0; i < points.length -1; i++){
+                    let j = Math.floor(Math.random() * (i + 1));
+                    let k = points[i];
+                    points[i] = points[j];
+                    points[j] = k;
+                }
+                document.getElementById("demo").innerHTML = points;
+            }
+        </script>
+    </body>
+</html>
