@@ -21,9 +21,9 @@ let y = + x;
 console.log(typeof(y));         //number
 
 let x1 = "John";
-console.log(typeof(x));         //string
+console.log(typeof(x1));         //string
 let y1 = + x1;
-console.log(typeof(y));         //number
+console.log(typeof(y1));         //number
 
 //Converting Numbers to Strings
 //global String() method
